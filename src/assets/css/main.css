@@ -96,13 +96,6 @@ th {
   padding: 0;
   text-align: left; }
 
-body {
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -moz-box;
-  display: -ms-flexbox;
-  display: flex; }
-
 .bg-primary {
   background-color: ""; }
 

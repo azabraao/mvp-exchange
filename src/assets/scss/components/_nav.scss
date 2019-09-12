@@ -1,3 +1,37 @@
 .nav {
+    .nav__inner {
+        .nav__logo {
+
+        }
+    }
     
+    .nav__links {
+    
+    }
+}
+
+.nav-toggler {
+    .nav-toggler__bar {
+
+    }
+}
+
+@media only screen and (min-width: $mobile-up) {
+    .nav--tablet-up {
+        .nav__inner {
+            .nav__logo {
+    
+            }
+        }
+        
+        .nav__links {
+        
+        }
+    }
+    
+    .nav-toggler {
+        .nav-toggler__bar {
+    
+        }
+    }
 }
