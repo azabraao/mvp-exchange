@@ -216,4 +216,10 @@ th {
 .text-right {
   text-align: right; }
 
+.hero, .hero--header, .hero--cta {
+  display: block; }
+
+.hero--header .hero__title {
+  text-align: center; }
+
 /*# sourceMappingURL=main.css.map */

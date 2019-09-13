@@ -1,18 +1,30 @@
 .hero {
+    display: block;
+    
     .hero__container {
-        .hero__content {
 
-        }
-        .hero__cta {
-            
-        }
     }
 }
 
 .hero--header {
-    
+    @extend .hero;
+
+    .hero__title {
+        text-align: center;
+
+        h1 {
+
+        }
+    }
 }
 
 .hero--cta {
+    @extend .hero; 
 
+    .hero__content {
+
+    }
+    .hero__cta {
+        
+    }
 }
