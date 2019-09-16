@@ -1,3 +1,17 @@
 .container {
-    
+    padding: 0 2rem;
+}
+
+@media only screen and (min-width: $mobile-up) {
+    .container {
+        width: 750px;
+        margin: 0 auto;
+    }
+}
+
+@media only screen and (min-width: $desktop-up) {
+    .container {
+        width: 960px;
+        margin: 0 auto;
+    }
 }
