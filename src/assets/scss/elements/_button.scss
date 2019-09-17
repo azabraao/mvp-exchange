@@ -1,9 +1,14 @@
 .btn {
-
+    border-radius: 5px;
+    padding: 2px 58px;
+    font-size: 25px;
+    display: inline-block;
 }
 
 .btn--primary {
-
+    @extend .btn;
+    background: $primary;
+    color: $white;
 }
 
 .btn--primary-outlined {

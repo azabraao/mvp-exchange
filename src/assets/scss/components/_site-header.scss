@@ -1,20 +1,140 @@
 .site-header {
+    background-image: url('../img/site-header-background-overlay.png'),url('../img/site-header-background.png');
+    background-size: cover, cover;
+    
     .site-header__inner {
         .site-header__columns {
             .site-header__content {
                 .site-header__title {
-
+                    
                 }
                 .site-header__subtitle {
-
+                    
                 }
                 .site-header__cta {
-
+                    
                 }
             }
             .site-header__image {
-
+                
             }
         }
     }    
+}
+
+@media only screen and (min-width: $mobile-up) {
+    .site-header {
+        
+        .site-header__inner {
+            .site-header__columns {
+                .site-header__content {
+                    .site-header__title {
+                        
+                    }
+                    .site-header__subtitle {
+                        
+                    }
+                    .site-header__cta {
+                        
+                    }
+                }
+                .site-header__image {
+                    
+                }
+            }
+        }    
+    }
+}
+
+@media only screen and (min-width: $desktop-up) {
+    .site-header {
+        
+        .site-header__inner {
+            .site-header__columns {
+                display: flex;
+                flex-direction: row;
+                
+                .site-header__content {
+                    width: 55%;
+                    padding-top: 67px;
+                    
+                    .site-header__title {
+                        margin-bottom: 20px;
+                        
+                        h1 {
+                            font-size: 59px;
+                            color: $white;
+                            text-transform: uppercase;
+                            font-weight: 700;
+                            line-height: 70px;
+                        }
+                    }
+                    .site-header__subtitle {
+                        p {
+                            color: $white;
+                            font-size: 19.4px;
+                            font-weight: 300;
+                            line-height: 23px;
+                        }
+                    }
+                    .site-header__cta {
+                        padding: 35px 0;    
+                    }
+                }
+                .site-header__image {
+                    width: 45%;
+                    height: 467px;
+                    background-image: url(../img/menino-com-bola.png);
+                    background-size: 326px;
+                    background-repeat: no-repeat;
+                    background-position: 78px 21px;
+                }
+            }
+        }    
+    }
+    .slide-control {        
+        padding: 20px 0;
+        display: flex;
+        justify-content: space-between;
+        width: 237px;
+        align-items: center;
+        
+        .slide-control__steps {
+            display: flex;
+            justify-content: space-between;
+            width: 35px;
+            margin-right: 13px;
+            
+            span {
+                font-size: 15px;
+                color: $white;
+                font-weight: 300;
+            }
+        }
+        
+        .slide-control__loader {
+            width: 164px;
+            
+            span {
+                display: block;
+                width: 96%;
+                height: 1.5px;
+                background: $primary;
+            }
+        }
+        
+        .slide-control__right {
+            display: flex;
+            align-items: center;
+            
+            span {
+                background-image: url(../img/header-slide-arrow-right.png);
+                display: inline-block;
+                width: 15px;
+                height: 15px;
+                background-repeat: no-repeat;
+                background-size: contain;
+            }
+        }
+    }
 }

@@ -16,15 +16,27 @@ To change `display` (e.g. `display: inline-block;`), we suggest using a common C
 // HTML
 <i class="icon icon-home"></i>
 */
-.icon-email {
+.icon-header-slide-arrow-right {
+  background-image: url(sprite.png);
+  background-position: -17px -32px;
+  width: 17px;
+  height: 31px;
+}
+.icon-list-dot {
+  background-image: url(sprite.png);
+  background-position: -17px -63px;
+  width: 18px;
+  height: 17px;
+}
+.icon-slide-dot {
+  background-image: url(sprite.png);
+  background-position: -17px 0px;
+  width: 32px;
+  height: 32px;
+}
+.icon-vertical-line {
   background-image: url(sprite.png);
   background-position: 0px 0px;
-  width: 16px;
-  height: 16px;
-}
-.icon-error {
-  background-image: url(sprite.png);
-  background-position: -16px 0px;
-  width: 16px;
-  height: 16px;
+  width: 17px;
+  height: 147px;
 }
