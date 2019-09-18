@@ -2,32 +2,37 @@
     display: flex;
     justify-content: center;
     flex-wrap: wrap;
-
+    
     .box {
-        padding: 20px;
         width: 281px;
         border-radius: 5px;
         min-height: 219px;        
         box-shadow: 0px 0px 5px -2px $black;
         margin: 10px;
-
+        
         .box__cover {
-            
+            border-radius: 5px 5px 0 0;
+            height: 126px;
+            background: tomato;
         }
         
         .box__title {
-            padding: 5px 0;
+            padding: 25px 0 18px 0;
             
             h3 {
                 font-size: 28px;
                 text-transform: uppercase;
                 font-weight: bold;
                 text-align: center;
+                line-height: 28px;
             }
         }
         
-        .box__content {            
-            padding-top: 8px;
+        .box__content {
+            padding: 0px 20px 0 25px;
+            text-align: center;
+            font-size: 13px;
+            margin-bottom: 20px;
             
             p {
                 
@@ -37,6 +42,7 @@
                 padding-left: 43px;
                 font-size: 14.1px;
                 line-height: 19px;
+                text-align: left;
                 
                 .box__list-item {
                     position: relative;
@@ -59,7 +65,15 @@
         }
         
         .box__footer {
-            
+            display: flex;
+            justify-content: center;
+            padding: 34px 0px;
+
+            button {
+                width: 201px;
+                font-size: 21px;
+                padding: 5px;
+            }
         }
     }
 }
@@ -70,11 +84,6 @@
         justify-content: space-between;
         
         .box {
-            padding: 20px;
-            width: 281px;
-            border-radius: 5px;
-            min-height: 219px;        
-            box-shadow: 0px 0px 5px -2px $black;
             margin: 0;
             background: $white;
             
@@ -83,7 +92,6 @@
             }
             
             .box__title {
-                padding: 5px 0;
                 color: $grey;
                 
                 h3 {
@@ -94,8 +102,7 @@
                 }
             }
             
-            .box__content {            
-                padding-top: 8px;
+            .box__content {
                 
                 p {
                     
