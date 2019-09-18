@@ -3,6 +3,8 @@
     padding: 2px 58px;
     font-size: 25px;
     display: inline-block;
+    border: none;
+    text-decoration: none;
 }
 
 .btn--primary {
@@ -16,5 +18,7 @@
 }
 
 .btn--primary-inverted {
-
+    @extend .btn;
+    color: $primary;
+    background: $white;
 }

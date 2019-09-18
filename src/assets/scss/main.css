@@ -249,10 +249,49 @@ button {
     margin: 0 auto; } }
 
 .hero, .hero--header, .hero--cta {
-  display: block; }
+  display: block;
+  display: flex;
+  justify-content: center;
+  align-items: center; }
+  .hero .hero__container, .hero--header .hero__container, .hero--cta .hero__container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 300px; }
 
 .hero--header .hero__title {
   text-align: center; }
+
+.hero--cta {
+  background: #c7ae69;
+  padding: 44px 0; }
+  .hero--cta .hero__content {
+    font-size: 30px;
+    line-height: 33px; }
+    .hero--cta .hero__content p:first-child {
+      font-size: 28px; }
+  .hero--cta .hero__cta .btn, .hero--cta .hero__cta .btn--primary, .hero--cta .hero__cta .btn--primary-inverted {
+    padding: 10px 28px;
+    font-size: 25px;
+    width: 290px;
+    text-transform: uppercase;
+    font-weight: 700;
+    font-size: 27px;
+    text-align: center; }
+
+@media only screen and (min-width: 48rem) {
+  .hero .hero__container, .hero--header .hero__container, .hero--cta .hero__container {
+    width: 700px; } }
+
+@media only screen and (min-width: 62rem) {
+  .hero .hero__container, .hero--header .hero__container, .hero--cta .hero__container {
+    width: 794px; } }
+
+.section .section__title {
+  text-align: center;
+  font-size: 28px;
+  text-transform: uppercase;
+  line-height: 33px; }
 
 .nav--mobile {
   padding: 1rem 0;
@@ -595,15 +634,21 @@ button {
   margin-bottom: 14px;
   line-height: 23px; }
 
-.btn, .btn--primary {
+.btn, .btn--primary, .btn--primary-inverted {
   border-radius: 5px;
   padding: 2px 58px;
   font-size: 25px;
-  display: inline-block; }
+  display: inline-block;
+  border: none;
+  text-decoration: none; }
 
 .btn--primary {
   background: #c7ae69;
   color: #fff; }
+
+.btn--primary-inverted {
+  color: #c7ae69;
+  background: #fff; }
 
 .video {
   width: 304px;
@@ -727,3 +772,6 @@ button {
     top: -251px;
     background-size: contain;
     background-repeat: no-repeat; } }
+
+.conheca-programas-intercambio .section__title {
+  padding: 65px 0 22px 0px; }
