@@ -1,27 +1,134 @@
 .boxes {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+
     .box {
+        padding: 20px;
+        width: 281px;
+        border-radius: 5px;
+        min-height: 219px;        
+        box-shadow: 0px 0px 5px -2px $black;
+        margin: 10px;
+
         .box__cover {
-
-        }
-
-        .box__title {
             
         }
         
-        .box__content {
-            p {
-
+        .box__title {
+            padding: 5px 0;
+            
+            h3 {
+                font-size: 28px;
+                text-transform: uppercase;
+                font-weight: bold;
+                text-align: center;
             }
-
+        }
+        
+        .box__content {            
+            padding-top: 8px;
+            
+            p {
+                
+            }
+            
             .box__list {
+                padding-left: 43px;
+                font-size: 14.1px;
+                line-height: 19px;
+                
                 .box__list-item {
-
+                    position: relative;
+                }
+                
+                .box__list-item:before {
+                    content: '';
+                    background: $primary;
+                    width: 8px;
+                    height: 8px;
+                    border-radius: 50%;
+                    display: block;
+                    position: absolute;
+                    left: -15px;
+                    top: 1px;
+                    bottom: 0;
+                    margin: auto;
                 }
             }
         }
-
+        
         .box__footer {
             
         }
     }
+}
+
+@media only screen and (min-width: $desktop-up) {
+    .boxes {
+        display: flex;
+        justify-content: space-between;
+        
+        .box {
+            padding: 20px;
+            width: 281px;
+            border-radius: 5px;
+            min-height: 219px;        
+            box-shadow: 0px 0px 5px -2px $black;
+            margin: 0;
+            background: $white;
+            
+            .box__cover {
+                
+            }
+            
+            .box__title {
+                padding: 5px 0;
+                color: $grey;
+                
+                h3 {
+                    font-size: 28px;
+                    text-transform: uppercase;
+                    font-weight: bold;
+                    text-align: center;
+                }
+            }
+            
+            .box__content {            
+                padding-top: 8px;
+                
+                p {
+                    
+                }
+                
+                .box__list {
+                    padding-left: 43px;
+                    font-size: 14.1px;
+                    line-height: 19px;
+                    
+                    .box__list-item {
+                        position: relative;
+                    }
+                    
+                    .box__list-item:before {
+                        content: '';
+                        background: $primary;
+                        width: 8px;
+                        height: 8px;
+                        border-radius: 50%;
+                        display: block;
+                        position: absolute;
+                        left: -15px;
+                        top: 1px;
+                        bottom: 0;
+                        margin: auto;
+                    }
+                }
+            }
+            
+            .box__footer {
+                
+            }
+        }
+    }    
 }

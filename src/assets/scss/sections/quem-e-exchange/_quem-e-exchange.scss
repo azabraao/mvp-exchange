@@ -1,3 +1,90 @@
 .quem-e-exchange {
+    padding-top: 109px;
+    padding-bottom: 73px;
+    position: relative;
+    background-image: url(../img/site-background-1.png);
+    background-size: contain;
+    background-position-y: center;
     
+    .section__title {
+        max-width: 440px;
+        margin: 0 auto;
+        margin-bottom: 20px;
+        
+        h2 {
+            color: $primary;
+            font-size: 28px;
+            text-align: center;
+            text-transform: uppercase;
+            line-height: 35px;
+        }
+    }
+    
+    .boxes {
+        margin: 45px 0;
+    }
+    
+    .content {
+        max-width: 690px;
+        margin: 0 auto;     
+    }
+    
+    .video {
+        margin: 0 auto;
+        margin-top: 64px; 
+    }
+}
+
+.quem-e-exchange:before {
+    content: '';
+    position: absolute;
+    background: $black;
+    width: 6px;
+    height: 56px;
+    display: block;
+    top: 33px;
+    margin: 0 auto;
+    left: 0;
+    right: 0;
+    border-radius: 20px;
+}
+
+@media only screen and (min-width: $desktop-up) {
+    .quem-e-exchange {
+        .boxes {
+            .box {
+                position: relative;
+            }
+            
+            .box:not(:first-child):before {
+                content: '';
+                display: block;
+                background-image: url(../img/arrow-right-holdered.png);
+                width: 60px;
+                height: 60px;
+                position: absolute;
+                left: -42px;
+                top: 0;
+                background-size: contain;
+                bottom: 0;
+                margin: auto;
+            }
+        }
+        
+        .content {
+            position: relative;
+        }
+        
+        .content:before {
+            content: '';
+            position: absolute;
+            height: 590px;
+            width: 440px;
+            background-image: url(../img/jogador-de-basquete.png);
+            left: -271px;
+            top: -251px;
+            background-size: contain;
+            background-repeat: no-repeat;
+        }
+    }    
 }
