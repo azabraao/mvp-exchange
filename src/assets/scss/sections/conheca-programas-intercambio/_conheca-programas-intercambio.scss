@@ -1,32 +1,41 @@
 .conheca-programas-intercambio {
     padding-bottom: 119px;
-
+    background-image: url(../img/site-background-2.png);
+    background-size: 1233px;
+    background-repeat: no-repeat;
+    background-position: left -64px;
+    
+    
     .section__title {
         padding: 65px 0 22px 0px;
         position: relative;
     }
     
-    .section__title:before {
-        content: '';
-        background-image: url(../img/capacete.png);
-        width: 168px;
-        height: 167px;
-        display: block;
-        position: absolute;
-        top: -19px;
-        right: -63px;
-        background-size: contain;
-        background-repeat: no-repeat;
-    }
-    
     .boxes {
         margin-top: 20px;
-
+        
         .box {
             .box__title {
                 min-height: 93px;
                 padding: 17px 0 6px 0;
             }
+        }
+    }
+}
+
+@media only screen and(min-width: $mobile-up) {
+    .conheca-programas-intercambio {
+        .section__title:before {
+            content: '';
+            background-image: url(../img/capacete.png);
+            width: 168px;
+            height: 167px;
+            display: block;
+            position: absolute;
+            top: -19px;
+            right: -63px;
+            background-size: contain;
+            background-repeat: no-repeat;
         }
     }
 }

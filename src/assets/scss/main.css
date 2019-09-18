@@ -257,7 +257,8 @@ button {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    width: 300px; }
+    width: 260px;
+    flex-direction: column; }
 
 .hero--header .hero__title {
   text-align: center; }
@@ -266,22 +267,32 @@ button {
   background: #c7ae69;
   padding: 44px 0; }
   .hero--cta .hero__content {
-    font-size: 30px;
-    line-height: 33px; }
+    font-size: 22px;
+    line-height: 25px; }
     .hero--cta .hero__content p:first-child {
       font-size: 28px; }
   .hero--cta .hero__cta .btn, .hero--cta .hero__cta .btn--primary, .hero--cta .hero__cta .btn--primary-inverted {
     padding: 10px 28px;
-    font-size: 25px;
-    width: 290px;
+    width: 260px;
     text-transform: uppercase;
     font-weight: 700;
-    font-size: 27px;
-    text-align: center; }
+    text-align: center;
+    font-size: 20px;
+    margin-top: 20px; }
 
 @media only screen and (min-width: 48rem) {
   .hero .hero__container, .hero--header .hero__container, .hero--cta .hero__container {
-    width: 700px; } }
+    width: 700px;
+    flex-direction: row; }
+  .hero--cta .hero__content {
+    font-size: 30px;
+    line-height: 33px; }
+    .hero--cta .hero__content p:first-child {
+      font-size: 20px; }
+  .hero--cta .hero__cta .btn, .hero--cta .hero__cta .btn--primary, .hero--cta .hero__cta .btn--primary-inverted {
+    width: 290px;
+    font-size: 27px;
+    margin-top: unset; } }
 
 @media only screen and (min-width: 62rem) {
   .hero .hero__container, .hero--header .hero__container, .hero--cta .hero__container {
@@ -303,7 +314,8 @@ button {
   left: 0;
   width: 100%;
   background: #fff;
-  transition: max-height .3s; }
+  transition: max-height .3s;
+  z-index: 1; }
   .nav--mobile .nav__inner {
     display: flex;
     justify-content: space-between;
@@ -553,7 +565,8 @@ button {
     border-radius: 5px;
     min-height: 219px;
     box-shadow: 0px 0px 5px -2px #000;
-    margin: 10px; }
+    margin: 10px;
+    background: #fff; }
     .boxes .box .box__cover {
       border-radius: 5px 5px 0 0;
       height: 126px;
@@ -604,8 +617,7 @@ button {
     display: flex;
     justify-content: space-between; }
     .boxes .box {
-      margin: 0;
-      background: #fff; }
+      margin: 0; }
       .boxes .box .box__title {
         color: #575756; }
         .boxes .box .box__title h3 {
@@ -659,7 +671,7 @@ button {
   background: #fff; }
 
 .video {
-  width: 304px;
+  width: 254px;
   height: 144.4px;
   border-radius: 7px;
   position: relative;
@@ -719,8 +731,9 @@ button {
   padding-bottom: 73px;
   position: relative;
   background-image: url(../img/site-background-1.png);
-  background-size: contain;
-  background-position-y: center; }
+  background-size: cover;
+  background-position-y: center;
+  background-repeat: no-repeat; }
   .quem-e-exchange .section__title {
     max-width: 440px;
     margin: 0 auto;
@@ -754,38 +767,51 @@ button {
   border-radius: 20px; }
 
 @media only screen and (min-width: 62rem) {
-  .quem-e-exchange .boxes .box {
-    position: relative; }
-  .quem-e-exchange .boxes .box:not(:first-child):before {
-    content: '';
-    display: block;
-    background-image: url(../img/arrow-right-holdered.png);
-    width: 60px;
-    height: 60px;
-    position: absolute;
-    left: -42px;
-    top: 0;
-    background-size: contain;
-    bottom: 0;
-    margin: auto; }
-  .quem-e-exchange .content {
-    position: relative; }
-  .quem-e-exchange .content:before {
-    content: '';
-    position: absolute;
-    height: 590px;
-    width: 440px;
-    background-image: url(../img/jogador-de-basquete.png);
-    left: -271px;
-    top: -251px;
-    background-size: contain;
-    background-repeat: no-repeat; } }
+  .quem-e-exchange {
+    background-size: contain; }
+    .quem-e-exchange .boxes .box {
+      position: relative; }
+    .quem-e-exchange .boxes .box:not(:first-child):before {
+      content: '';
+      display: block;
+      background-image: url(../img/arrow-right-holdered.png);
+      width: 60px;
+      height: 60px;
+      position: absolute;
+      left: -42px;
+      top: 0;
+      background-size: contain;
+      bottom: 0;
+      margin: auto; }
+    .quem-e-exchange .content {
+      position: relative; }
+    .quem-e-exchange .content:before {
+      content: '';
+      position: absolute;
+      height: 590px;
+      width: 440px;
+      background-image: url(../img/jogador-de-basquete.png);
+      left: -271px;
+      top: -251px;
+      background-size: contain;
+      background-repeat: no-repeat; } }
 
 .conheca-programas-intercambio {
-  padding-bottom: 119px; }
+  padding-bottom: 119px;
+  background-image: url(../img/site-background-2.png);
+  background-size: 1233px;
+  background-repeat: no-repeat;
+  background-position: left -64px; }
   .conheca-programas-intercambio .section__title {
     padding: 65px 0 22px 0px;
     position: relative; }
+  .conheca-programas-intercambio .boxes {
+    margin-top: 20px; }
+    .conheca-programas-intercambio .boxes .box .box__title {
+      min-height: 93px;
+      padding: 17px 0 6px 0; }
+
+@media only screen and (min-width: 48rem) {
   .conheca-programas-intercambio .section__title:before {
     content: '';
     background-image: url(../img/capacete.png);
@@ -796,12 +822,7 @@ button {
     top: -19px;
     right: -63px;
     background-size: contain;
-    background-repeat: no-repeat; }
-  .conheca-programas-intercambio .boxes {
-    margin-top: 20px; }
-    .conheca-programas-intercambio .boxes .box .box__title {
-      min-height: 93px;
-      padding: 17px 0 6px 0; }
+    background-repeat: no-repeat; } }
 
 .best-structure {
   margin-top: 120px;

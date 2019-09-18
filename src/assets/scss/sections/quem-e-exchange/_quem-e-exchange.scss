@@ -3,9 +3,10 @@
     padding-bottom: 73px;
     position: relative;
     background-image: url(../img/site-background-1.png);
-    background-size: contain;
+    background-size: cover;
     background-position-y: center;
-    
+    background-repeat: no-repeat;
+
     .section__title {
         max-width: 440px;
         margin: 0 auto;
@@ -51,6 +52,8 @@
 
 @media only screen and (min-width: $desktop-up) {
     .quem-e-exchange {
+        background-size: contain;
+        
         .boxes {
             .box {
                 position: relative;

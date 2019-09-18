@@ -9,6 +9,7 @@
         min-height: 219px;        
         box-shadow: 0px 0px 5px -2px $black;
         margin: 10px;
+        background: $white;
         
         .box__cover {
             border-radius: 5px 5px 0 0;
@@ -85,7 +86,6 @@
         
         .box {
             margin: 0;
-            background: $white;
             
             .box__cover {
                 

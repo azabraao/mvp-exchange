@@ -9,6 +9,7 @@
     width: 100%;
     background: #fff;
     transition: max-height .3s;
+    z-index: 1;
     
     .nav__inner {
         display: flex; 
