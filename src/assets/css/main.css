@@ -1027,6 +1027,48 @@ button {
               background-size: contain;
       background-repeat: no-repeat; } }
 
+.parceiros {
+  padding: 86px 0 59px 0; }
+  .parceiros .parceiros__list {
+    max-width: 823px;
+    margin: 0 auto;
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -moz-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-justify-content: space-around;
+        -ms-flex-pack: distribute;
+            justify-content: space-around;
+    padding: 22px 0; }
+    .parceiros .parceiros__list .parceiros__list-item {
+      background: #c7ae69;
+      -webkit-border-radius: 10px;
+              border-radius: 10px;
+      width: 110px;
+      height: 110px; }
+  .parceiros .parceiros__slide-dots {
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -moz-box;
+    display: -ms-flexbox;
+    display: flex;
+    margin: 0 auto;
+    margin-top: 50px;
+    width: 85px;
+    -webkit-box-pack: justify;
+    -webkit-justify-content: space-between;
+       -moz-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between; }
+    .parceiros .parceiros__slide-dots .parceiros__slide-dot {
+      -webkit-border-radius: 50%;
+              border-radius: 50%;
+      height: 12px;
+      width: 12px;
+      background: #c7ae69;
+      display: block; }
+
 .conheca-programas-intercambio {
   padding-bottom: 119px;
   background-image: url(../img/site-background-2.png);

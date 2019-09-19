@@ -796,6 +796,32 @@ button {
       background-size: contain;
       background-repeat: no-repeat; } }
 
+.parceiros {
+  padding: 86px 0 59px 0; }
+  .parceiros .parceiros__list {
+    max-width: 823px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-around;
+    padding: 22px 0; }
+    .parceiros .parceiros__list .parceiros__list-item {
+      background: #c7ae69;
+      border-radius: 10px;
+      width: 110px;
+      height: 110px; }
+  .parceiros .parceiros__slide-dots {
+    display: flex;
+    margin: 0 auto;
+    margin-top: 50px;
+    width: 85px;
+    justify-content: space-between; }
+    .parceiros .parceiros__slide-dots .parceiros__slide-dot {
+      border-radius: 50%;
+      height: 12px;
+      width: 12px;
+      background: #c7ae69;
+      display: block; }
+
 .conheca-programas-intercambio {
   padding-bottom: 119px;
   background-image: url(../img/site-background-2.png);

@@ -1,5 +1,34 @@
 .parceiros {
-    .parceiros__list {
+    padding: 86px 0 59px 0;
 
+    .parceiros__list {
+        max-width: 823px;
+        margin: 0 auto;
+        display: flex;
+        justify-content: space-around;
+        padding: 22px 0;
+
+        .parceiros__list-item {
+            background: $primary;
+            border-radius: 10px;
+            width: 110px;
+            height: 110px;            
+        }
+    }
+
+    .parceiros__slide-dots {
+        display: flex;
+        margin: 0 auto;
+        margin-top: 50px;
+        width: 85px;
+        justify-content: space-between;
+
+        .parceiros__slide-dot {
+            border-radius: 50%;
+            height: 12px;
+            width: 12px;
+            background: $primary;
+            display: block;
+        }
     }
 }
