@@ -33,9 +33,18 @@
             display: block;
             position: absolute;
             top: -19px;
-            right: -63px;
+            right: -40px;
             background-size: contain;
             background-repeat: no-repeat;
         }
     }
+}
+
+@media only screen and (min-width: $desktop-up) {
+    .conheca-programas-intercambio {
+        .section__title:before {
+            right: -63px;
+        }
+    }
+
 }

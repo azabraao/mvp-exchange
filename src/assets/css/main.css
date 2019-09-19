@@ -741,6 +741,17 @@ button {
         -webkit-background-size: contain;
                 background-size: contain; } }
 
+.chess {
+  height: 183px;
+  background-image: url(../img/background-xadrez.png);
+  -webkit-background-size: cover;
+          background-size: cover;
+  background-position: left center; }
+
+@media only screen and (min-width: 48rem) {
+  .chess {
+    height: 423px; } }
+
 .boxes {
   display: -webkit-box;
   display: -webkit-flex;
@@ -1094,10 +1105,14 @@ button {
     display: block;
     position: absolute;
     top: -19px;
-    right: -63px;
+    right: -40px;
     -webkit-background-size: contain;
             background-size: contain;
     background-repeat: no-repeat; } }
+
+@media only screen and (min-width: 62rem) {
+  .conheca-programas-intercambio .section__title:before {
+    right: -63px; } }
 
 .best-structure {
   margin-top: 90px;
