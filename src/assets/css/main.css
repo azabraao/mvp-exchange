@@ -661,9 +661,9 @@ button {
           text-transform: uppercase;
           font-weight: 700;
           line-height: 70px;
-          width: unset; }
+          width: auto; }
       .site-header .site-header__inner .site-header__columns .site-header__content .site-header__subtitle {
-        width: unset; }
+        width: auto; }
         .site-header .site-header__inner .site-header__columns .site-header__content .site-header__subtitle p {
           color: #fff;
           font-size: 19.4px;
@@ -1174,7 +1174,8 @@ button {
     .best-structure .best-structure__main .best-structure__content {
       color: #fff;
       font-size: 14px;
-      padding: 21px 0; }
+      padding: 21px 0;
+      max-width: 372px; }
     .best-structure .best-structure__main .best-structure__cta a {
       width: 178px;
       font-size: 15px;
@@ -1213,8 +1214,8 @@ button {
       bottom: 0;
       right: -7px;
       top: 148px;
-      margin: unset;
-      left: unset; }
+      margin: initial;
+      left: auto; }
     .best-structure .best-structure__item.item-1 {
       top: 0;
       left: 0; }
@@ -1226,7 +1227,8 @@ button {
       bottom: 0;
       left: -7px;
       top: 148px;
-      margin: unset; }
+      right: auto;
+      margin: initial; }
     .best-structure .best-structure__item.item-2 {
       top: 0;
       right: 0; }
@@ -1236,9 +1238,9 @@ button {
            -o-transform: rotate(42deg);
               transform: rotate(42deg);
       right: -2px;
-      left: unset;
+      left: auto;
       bottom: 148px;
-      margin: unset; }
+      margin: initial; }
     .best-structure .best-structure__item.item-3 {
       bottom: 0;
       left: 0; }
@@ -1249,16 +1251,23 @@ button {
               transform: rotate(-42deg);
       left: -7px;
       bottom: 148px;
-      margin: unset; }
+      right: auto;
+      margin: initial; }
     .best-structure .best-structure__item.item-4 {
       bottom: 0;
       right: 0; }
     .best-structure .best-structure__main:before {
       content: '';
-      background-image: url(../img/border-dashed.png);
       width: 117%;
       height: 117%;
+      -webkit-border-radius: 50%;
+              border-radius: 50%;
       position: absolute;
+      left: 50%;
+      top: 50%;
+      margin-left: -240px;
+      margin-top: -240px;
+      background-image: url(../img/border-dashed.png);
       -webkit-background-size: contain;
               background-size: contain;
       background-repeat: no-repeat; }
@@ -1270,7 +1279,11 @@ button {
       position: absolute;
       -webkit-background-size: contain;
               background-size: contain;
-      background-repeat: no-repeat; }
+      background-repeat: no-repeat;
+      left: 50%;
+      top: 50%;
+      margin-left: -280px;
+      margin-top: -280px; }
     .best-structure .best-structure__main {
       -webkit-border-radius: 50%;
               border-radius: 50%; } }

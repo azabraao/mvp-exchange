@@ -115,6 +115,7 @@
             color: $white;
             font-size: 14px;
             padding: 21px 0;
+            max-width: 372px;
         }
         
         .best-structure__cta {
@@ -148,8 +149,8 @@
             bottom: 0;
             right: -7px;
             top: 148px;
-            margin: unset;
-            left: unset;        
+            margin: initial;
+            left: auto;        
         }
         
         .best-structure__item.item-1 {
@@ -162,7 +163,8 @@
             bottom: 0;
             left: -7px;
             top: 148px;
-            margin: unset;
+            right: auto;
+            margin: initial;
         }
         
         .best-structure__item.item-2 {
@@ -173,9 +175,9 @@
         .best-structure__item.item-3:after {
             transform: rotate(42deg);
             right: -2px;
-            left: unset;
+            left: auto;
             bottom: 148px;
-            margin: unset;
+            margin: initial;
         }
         
         .best-structure__item.item-3 {
@@ -187,7 +189,8 @@
             transform: rotate(-42deg);
             left: -7px;
             bottom: 148px;
-            margin: unset;
+            right: auto;
+            margin: initial;
         }
         
         .best-structure__item.item-4 {
@@ -197,10 +200,15 @@
         
         .best-structure__main:before {
             content: '';
-            background-image: url(../img/border-dashed.png);
             width: 117%;
             height: 117%;
+            border-radius: 50%;
             position: absolute;
+            left: 50%;
+            top: 50%;
+            margin-left: -240px;
+            margin-top: -240px;
+            background-image: url(../img/border-dashed.png);
             background-size: contain;
             background-repeat: no-repeat;
         }
@@ -213,6 +221,10 @@
             position: absolute;
             background-size: contain;
             background-repeat: no-repeat;
+            left: 50%;
+            top: 50%;
+            margin-left: -280px;
+            margin-top: -280px;
         }
         
         .best-structure__main {
