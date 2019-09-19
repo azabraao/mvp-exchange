@@ -304,7 +304,7 @@ button {
     font-size: 22px;
     line-height: 25px; }
     .hero--cta .hero__content p:first-child {
-      font-size: 28px; }
+      font-size: 20px; }
   .hero--cta .hero__cta .btn, .hero--cta .hero__cta .btn--primary, .hero--cta .hero__cta .btn--primary-inverted {
     padding: 10px 28px;
     width: 260px;
@@ -328,7 +328,7 @@ button {
     font-size: 30px;
     line-height: 33px; }
     .hero--cta .hero__content p:first-child {
-      font-size: 20px; }
+      font-size: 28px; }
   .hero--cta .hero__cta .btn, .hero--cta .hero__cta .btn--primary, .hero--cta .hero__cta .btn--primary-inverted {
     width: 290px;
     font-size: 27px;
