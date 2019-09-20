@@ -15,12 +15,22 @@
 
 .hero--header {
     @extend .hero;
-    
+    background-image: url('../img/site-header-background-overlay.png'),url('../img/site-header-background.png');
+    padding: 38px 0 28px 0;
+    background-size: cover;
+    background-repeat: no-repeat;
+
     .hero__title {
         text-align: center;
+        width: 100%;
         
         h1 {
-            
+            font-family: $font-primary;
+            font-size: 37px;
+            font-weight: 700;
+            margin-bottom: 2px;
+            color: $white;
+            text-transform: uppercase;
         }
     }
 }

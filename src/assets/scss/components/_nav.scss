@@ -162,3 +162,19 @@
         
     }
 }
+
+
+.nav.white-theme {
+    background: $white;
+
+    .nav__inner {
+        .nav__links {    
+            li {
+                a {
+                    color: $black;
+                }
+
+            }
+        }
+    }
+}

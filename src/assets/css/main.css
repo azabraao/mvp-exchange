@@ -260,8 +260,21 @@ button {
     width: 260px;
     flex-direction: column; }
 
-.hero--header .hero__title {
-  text-align: center; }
+.hero--header {
+  background-image: url("../img/site-header-background-overlay.png"), url("../img/site-header-background.png");
+  padding: 38px 0 28px 0;
+  background-size: cover;
+  background-repeat: no-repeat; }
+  .hero--header .hero__title {
+    text-align: center;
+    width: 100%; }
+    .hero--header .hero__title h1 {
+      font-family: "Titillium Web", "Montserrat", sans-serif;
+      font-size: 37px;
+      font-weight: 700;
+      margin-bottom: 2px;
+      color: #fff;
+      text-transform: uppercase; }
 
 .hero--cta {
   background: #c7ae69;
@@ -412,6 +425,11 @@ button {
       padding: 0; }
       .nav--tablet-up .nav__inner .nav__links li a {
         font-size: 13px; } }
+
+.nav.white-theme {
+  background: #fff; }
+  .nav.white-theme .nav__inner .nav__links li a {
+    color: #000; }
 
 .site-header {
   background-image: url("../img/site-header-background-overlay.png"), url("../img/site-header-background.png");
