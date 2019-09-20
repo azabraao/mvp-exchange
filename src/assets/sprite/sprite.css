@@ -9,34 +9,35 @@ Example usage in HTML:
 To change `display` (e.g. `display: inline-block;`), we suggest using a common CSS class:
 
 // CSS
-.icon {
-  display: inline-block;
-}
 
 // HTML
 <i class="icon icon-home"></i>
 */
-.icon-header-slide-arrow-right {
-  background-image: url(sprite.png);
-  background-position: -17px -32px;
-  width: 17px;
-  height: 31px;
+
+.icon {
+  display: inline-block;
 }
-.icon-list-dot {
+.icon-facebook-logo {
   background-image: url(sprite.png);
-  background-position: -17px -63px;
-  width: 18px;
-  height: 17px;
+  background-position: -56px 0px;
+  width: 13px;
+  height: 28px;
 }
-.icon-slide-dot {
-  background-image: url(sprite.png);
-  background-position: -17px 0px;
-  width: 32px;
-  height: 32px;
-}
-.icon-vertical-line {
+.icon-instagram-logo {
   background-image: url(sprite.png);
   background-position: 0px 0px;
-  width: 17px;
-  height: 147px;
+  width: 28px;
+  height: 28px;
+}
+.icon-whatsapp-logo {
+  background-image: url(sprite.png);
+  background-position: -28px 0px;
+  width: 28px;
+  height: 28px;
+}
+.icon-youtube-logo {
+  background-image: url(sprite.png);
+  background-position: 0px -28px;
+  width: 28px;
+  height: 21px;
 }
