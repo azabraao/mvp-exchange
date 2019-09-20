@@ -1,35 +1,165 @@
 .site-footer {
+    background-image: url('../img/footer-background-overlay.png'),url('../img/footer-background.png');
+    background-size: cover, cover;
+    
     .site-footer__header {
+        display: flex;
+        justify-content: space-between;
+        padding: 55px 0 13px 0;
+        border-bottom: 1px solid $primary;
+        align-items: center;
+        
         .site-footer__logo {
-
+            span {
+                height: 77px;
+                width: 136px;
+                background-image: url(../img/logo.png);
+                display: block;
+                background-size: 100%;
+                background-repeat: no-repeat;
+            }
         }
         .site-footer__social-links {
+            display: flex;
+            width: 339px;
+            justify-content: space-between;
+            align-items: center;
+            
             .site-footer__social-link {
-
+                display: flex;
+                align-items: center;
+                justify-content: space-between;
+                text-decoration: none;
+                
+                .icon {
+                    margin-right: 3px;
+                }
+                
+                span {
+                    color: $primary;
+                    text-transform: uppercase;
+                    font-size: 9.8px;
+                    font-family: $font-secondary;
+                }
             }
         }
     }
-
+    
     .site-footer__body {
+        padding-top: 42px;
+        padding-bottom: 19px;
+        border-bottom: 1px solid $primary;
+        
         .site-footer__row {
+            display: flex;
+            justify-content: space-between;
+            padding-bottom: 34px;
+            
             .site-footer__column {
+                width: 258px;
+                
                 .site-footer__links {
                     .site-footer__links-title {
-
+                        font-family: $font-primary;
+                        font-weight: 700;
+                        text-transform: uppercase;
+                        color: $primary;
+                        font-size: 22px;
+                        margin-bottom: 13px;  
                     }
                     .site-footer__links-list {
+                        display: flex;
+                        flex-direction: column;
+                        
                         .site-footer__link {
-
+                            padding-left: 20px;
+                            position: relative;
+                            color: $white;
+                            text-decoration: none;
+                            font-size: 14px;
+                            font-weight: 200;
+                            min-height: 23px;                            
+                        }
+                        
+                        .site-footer__link:before {
+                            content: '';
+                            width: 10px; height: 10px;
+                            background: $primary;
+                            display: block;
+                            border-radius: 50%;
+                            margin-right: 10px;
+                            position: absolute;
+                            left: 0px;
+                            top: 0;
+                            bottom: 0;
+                            margin: auto 0;
                         }
                     }
                 }
             }
         }
     }
-
+    
     .site-footer__footer {
+        text-align: center;
+        padding: 20px 0 30px 0;
+
         p {
+            color: $white;  
+            font-weight: 200;
+            font-size: 14px;
+        }
+    }
+}
+
+@media only screen and (max-width: $desktop-up) {
+    .site-footer {
+        .site-footer__body {
+            .site-footer__row {
+                .site-footer__column {
+                    width: calc(100% / 3)                }
+            }
+        }
+    }
+}
+
+@media only screen and (max-width: $mobile-up) {
+    .site-footer {
+        .site-footer__header {
+            flex-direction: column;
+            width: 100%;
             
+            .site-footer__social-links {
+                width: 100%;
+                flex-wrap: wrap;
+                
+                .site-footer__social-link {
+                    width: 50%;
+                    justify-content: center;
+                    height: 30px;
+                    
+                    span {
+                    }
+                }
+            }
+        }
+        .site-footer__body {
+            .site-footer__row {
+                flex-direction: column;
+                .site-footer__column {
+                    width: 100%;
+                    
+                    .site-footer__links {
+                        .site-footer__links-title {
+                            font-size: 21.8px;
+                        }
+                    }
+                }
+                
+                .site-footer__column:not(:last-child) {                    
+                    padding-bottom: 35px;
+                }
+            }
         }
     }
 }

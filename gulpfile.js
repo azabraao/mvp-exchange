@@ -45,16 +45,16 @@ gulp.task('sprite', async () => {
 gulp.task('sass', async () => {
     gulp.src('./src/assets/scss/main.scss')
     .pipe(sass().on('error', sass.logError))
-    .pipe(gulp.dest('./src/assets/scss/'))
-    .pipe(sourcemaps.init())
-    .pipe(autoprefixer())
-    .pipe(concat('main.css'))
-    .pipe(sourcemaps.write('.'))
+    // .pipe(gulp.dest('./src/assets/scss/'))
+    // .pipe(sourcemaps.init())
+    // .pipe(autoprefixer())
+    // .pipe(concat('main.css'))
+    // .pipe(sourcemaps.write('.'))
     .pipe(gulp.dest('./src/assets/css/'))    
     
-    .pipe(uglifycss({
-        "uglyComments": true
-    }))
+    // .pipe(uglifycss({
+    //     "uglyComments": true
+    // }))
     .pipe(rename('main.min.css'))
     .pipe(gulp.dest('./src/assets/css/'));    
 });

@@ -1,4 +1,4 @@
-@import url("https://fonts.googleapis.com/css?family=Montserrat|Titillium+Web:300,400,500,600,700&display=swap");
+@import url("https://fonts.googleapis.com/css?family=Montserrat:200,400,500,700|Titillium+Web:300,400,500,600,700&display=swap");
 /*! minireset.css v0.0.5 | MIT License | github.com/jgthms/minireset.css */
 html,
 body,
@@ -566,6 +566,67 @@ button {
   .chess {
     height: 423px; } }
 
+.site-footer {
+  background-image: url("../img/footer-background-overlay.png"), url("../img/footer-background.png");
+  background-size: cover, cover; }
+  .site-footer .site-footer__header {
+    display: flex;
+    justify-content: space-between;
+    padding: 55px 0 13px 0;
+    border-bottom: 1px solid #c7ae69;
+    align-items: center; }
+    .site-footer .site-footer__header .site-footer__logo span {
+      height: 77px;
+      width: 136px;
+      background-image: url(../img/logo.png);
+      display: block;
+      background-size: 100%;
+      background-repeat: no-repeat; }
+    .site-footer .site-footer__header .site-footer__social-links {
+      display: flex;
+      width: 339px;
+      justify-content: space-between;
+      align-items: center; }
+      .site-footer .site-footer__header .site-footer__social-links .site-footer__social-link {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        text-decoration: none; }
+        .site-footer .site-footer__header .site-footer__social-links .site-footer__social-link .icon {
+          margin-right: 3px; }
+        .site-footer .site-footer__header .site-footer__social-links .site-footer__social-link span {
+          color: #c7ae69;
+          text-transform: uppercase;
+          font-size: 9.8px;
+          font-family: "Montserrat", sans-serif; }
+  .site-footer .site-footer__body {
+    padding-top: 42px; }
+    .site-footer .site-footer__body .site-footer__row {
+      display: flex;
+      justify-content: space-between; }
+      .site-footer .site-footer__body .site-footer__row .site-footer__column .site-footer__links .site-footer__links-title {
+        font-family: "Titillium Web", "Montserrat", sans-serif;
+        font-weight: 700;
+        text-transform: uppercase;
+        color: #c7ae69;
+        font-size: 20px; }
+      .site-footer .site-footer__body .site-footer__row .site-footer__column .site-footer__links .site-footer__links-list {
+        display: flex;
+        flex-direction: column; }
+        .site-footer .site-footer__body .site-footer__row .site-footer__column .site-footer__links .site-footer__links-list .site-footer__link {
+          padding-left: 20px;
+          position: relative; }
+        .site-footer .site-footer__body .site-footer__row .site-footer__column .site-footer__links .site-footer__links-list .site-footer__link:before {
+          content: '';
+          width: 10px;
+          height: 10px;
+          background: #c7ae69;
+          display: block;
+          border-radius: 50%;
+          margin-right: 10px;
+          position: absolute;
+          left: 0; }
+
 .boxes {
   display: flex;
   justify-content: center;
@@ -741,23 +802,31 @@ button {
 
 .icon-facebook-logo {
   background-image: url(../img/facebook-logo.png);
-  width: 13px;
-  height: 28px; }
+  width: 5px;
+  height: 11px;
+  background-size: contain;
+  background-repeat: no-repeat; }
 
 .icon-instagram-logo {
   background-image: url(../img/instagram-logo.png);
-  width: 28px;
-  height: 28px; }
+  width: 11px;
+  height: 11px;
+  background-size: contain;
+  background-repeat: no-repeat; }
 
 .icon-whatsapp-logo {
   background-image: url(../img/whatsapp-logo.png);
-  width: 28px;
-  height: 28px; }
+  width: 11px;
+  height: 11px;
+  background-size: contain;
+  background-repeat: no-repeat; }
 
 .icon-youtube-logo {
   background-image: url(../img/youtube-logo.png);
-  width: 28px;
-  height: 21px; }
+  width: 11px;
+  height: 11px;
+  background-size: contain;
+  background-repeat: no-repeat; }
 
 .quem-e-exchange {
   padding-top: 109px;
