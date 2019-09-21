@@ -3,6 +3,10 @@
     position: relative;
     padding-top: 148px;
     padding-bottom: 148px;
+    background-image: url(../img/site-background-1.png), url(../img/site-background-2.png);
+    background-size: contain,1233px;
+    background-position-y: bottom, top;
+    background-repeat: no-repeat;
 
     .video {
         margin: 0 auto;

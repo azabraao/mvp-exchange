@@ -1,8 +1,16 @@
 .content {
+    max-width: 90%;
+    margin-left: auto;
+    margin-right: auto;
+    
     h2 {
         font-size: 28px;
         font-weight: 700;
         margin-bottom: 2px;
+        text-transform: uppercase;
+        color: $primary;
+        line-height: 28px;
+        margin-bottom: 10px;
     }   
     
     h3 {
@@ -13,5 +21,52 @@
         font-size: 16.4px;
         margin-bottom: 14px;
         line-height: 23px;
+    }
+}
+
+.content.centered {
+    text-align: center;
+}
+
+.content-section {
+    margin-top: 95px;
+}
+
+.content-columns {
+    .content-slide {
+        display: flex;
+        justify-content: center;
+    }
+}
+
+@media only screen and(min-width: $mobile-up) {
+    .content-columns {
+        display: flex;
+        flex-direction: row;
+        
+        .content {
+            width: 50%;
+            padding: 0 10px;
+        }
+        
+        .content-slide {
+            width: 50%;
+            margin-top: 38px;
+            padding-left: 14px;          
+        }
+    }
+}
+
+@media only screen and (min-width: $desktop-up) {
+    .content-columns {
+        .content {
+            width: 60%;
+            padding: 0 54px;
+        }
+        
+        .content-slide {
+            width: 40%;
+            padding-left: 28px;            
+        }
     }
 }
