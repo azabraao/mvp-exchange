@@ -1,0 +1,13 @@
+.page-try-out-em-faculdades {
+    padding-top: 80px;
+}
+
+@media only screen and (min-width: $mobile-up) {
+    .page-try-out-em-faculdades {
+        padding-top: 0;
+
+        .content img {
+            margin-bottom: 40px;
+        }
+    }
+}
