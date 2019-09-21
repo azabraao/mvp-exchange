@@ -1214,3 +1214,94 @@ button {
       transform: rotate(-51deg);
       bottom: 111px;
       left: -47px; } }
+
+.page-ingles {
+  padding-top: 80px; }
+  .page-ingles .content {
+    max-width: 90%;
+    margin-left: auto;
+    margin-right: auto; }
+  .page-ingles .content h2 {
+    text-transform: uppercase;
+    color: #c7ae69;
+    line-height: 28px;
+    margin-bottom: 10px; }
+  .page-ingles .columns .slide {
+    display: flex;
+    justify-content: center; }
+
+@media only screen and (min-width: 48rem) {
+  .page-ingles {
+    padding-top: 0; }
+    .page-ingles .columns {
+      display: flex;
+      flex-direction: row; }
+      .page-ingles .columns .content {
+        width: 50%;
+        padding: 0 10px; }
+      .page-ingles .columns .slide {
+        width: 50%;
+        margin-top: 49px;
+        padding-left: 14px; } }
+
+@media only screen and (min-width: 62rem) {
+  .page-ingles .columns .content {
+    width: 60%;
+    padding: 0 54px; }
+  .page-ingles .columns .slide {
+    width: 40%;
+    padding-left: 28px; } }
+
+.page-ingles .page-ingles__main {
+  position: relative;
+  padding-top: 148px;
+  padding-bottom: 148px; }
+  .page-ingles .page-ingles__main .video {
+    margin: 0 auto; }
+
+.page-ingles .page-ingles__main:before {
+  content: '';
+  position: absolute;
+  background: #000;
+  width: 6px;
+  height: 56px;
+  display: block;
+  top: 16px;
+  margin: 0 auto;
+  left: 0;
+  right: 0;
+  border-radius: 20px; }
+
+.page-ingles .aulas-presenciais-toefl {
+  text-align: center;
+  margin-top: 95px; }
+
+.page-ingles .open-english {
+  margin-top: 107px; }
+
+.page-ingles .slide .slide__inner {
+  border-radius: 5px;
+  width: 329px;
+  height: 390px;
+  box-shadow: 0px 0px 5px -2px #000; }
+  .page-ingles .slide .slide__inner .slide__arrows {
+    display: flex;
+    justify-content: space-between;
+    padding: 0 20px;
+    height: 100%;
+    align-items: center; }
+    .page-ingles .slide .slide__inner .slide__arrows .slide__arrow {
+      background-color: transparent;
+      border: none;
+      background-size: cover;
+      background-position: center;
+      width: 10px;
+      height: 14px; }
+    .page-ingles .slide .slide__inner .slide__arrows .slide__arrow-left {
+      background-image: url(../img/icon-arrow-left.png); }
+    .page-ingles .slide .slide__inner .slide__arrows .slide__arrow-right {
+      background-image: url(../img/icon-arrow-right.png); }
+
+.page-ingles .sobre-toefl {
+  margin-top: 95px;
+  text-align: center; }

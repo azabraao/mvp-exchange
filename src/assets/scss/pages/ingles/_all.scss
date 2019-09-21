@@ -1,3 +1,9 @@
+@import 'page-ingles';
+
 .page-ingles {
     @import 'main';
+    @import 'aulas-presenciais-toefl';
+    @import 'open-english';
+    @import 'slide';
+    @import 'sobre-toefl';
 }
