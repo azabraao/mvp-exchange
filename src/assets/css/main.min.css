@@ -134,7 +134,7 @@ button {
   background-color: ""; }
 
 .bg-grey-lighter {
-  background-color: ""; }
+  background-color: #f4f2f2; }
 
 .bg-grey-dark {
   background-color: ""; }
@@ -191,7 +191,7 @@ button {
   color: ""; }
 
 .color-grey-lighter {
-  color: ""; }
+  color: #f4f2f2; }
 
 .color-grey-dark {
   color: ""; }
@@ -824,14 +824,39 @@ button {
 .content-section {
   margin-top: 95px; }
 
+.content-columns .column {
+  padding: 0 10px;
+  width: 100%; }
+
 .content-columns .content-slide {
   display: flex;
   justify-content: center; }
+
+.content-list .content-list__item {
+  padding-left: 20px;
+  position: relative;
+  display: inline-block; }
+
+.content-list .content-list__item:before {
+  content: '';
+  width: 10px;
+  height: 10px;
+  background: #c7ae69;
+  display: block;
+  border-radius: 50%;
+  margin-right: 10px;
+  position: absolute;
+  left: 0px;
+  top: 0;
+  bottom: 0;
+  margin: auto 0; }
 
 @media only screen and (min-width: 48rem) {
   .content-columns {
     display: flex;
     flex-direction: row; }
+    .content-columns .column {
+      width: 50%; }
     .content-columns .content {
       width: 50%;
       padding: 0 10px; }
@@ -1305,3 +1330,46 @@ button {
   left: 0;
   right: 0;
   border-radius: 20px; }
+
+.page-travel-team {
+  padding-top: 80px; }
+  .page-travel-team .estadia-itinerario {
+    margin-top: 50px; }
+
+@media only screen and (min-width: 48rem) {
+  .page-travel-team {
+    padding-top: 0; } }
+
+.page-travel-team .page-travel-team__main {
+  position: relative;
+  padding-top: 148px;
+  padding-bottom: 68px;
+  background-image: url(../img/site-background-1.png), url(../img/site-background-2.png);
+  background-size: contain, 1233px;
+  background-position-y: 1000px, top;
+  background-repeat: no-repeat; }
+
+.page-travel-team .page-travel-team__main:before {
+  content: '';
+  position: absolute;
+  background: #000;
+  width: 6px;
+  height: 56px;
+  display: block;
+  top: 16px;
+  margin: 0 auto;
+  left: 0;
+  right: 0;
+  border-radius: 20px; }
+
+.page-travel-team .section {
+  padding: 90px 0 50px 0; }
+
+.page-travel-team .testimonials .testimonials__title {
+  max-width: 610px;
+  margin-left: auto;
+  margin-right: auto;
+  margin-bottom: 40px; }
+
+.page-travel-team .testimonials .testimonial {
+  margin-bottom: 40px; }

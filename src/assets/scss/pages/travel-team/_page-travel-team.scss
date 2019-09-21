@@ -1,0 +1,13 @@
+.page-travel-team {
+    padding-top: 80px;
+
+    .estadia-itinerario {
+        margin-top: 50px;
+    }
+}
+
+@media only screen and (min-width: $mobile-up) {
+    .page-travel-team {
+        padding-top: 0;
+    }
+}

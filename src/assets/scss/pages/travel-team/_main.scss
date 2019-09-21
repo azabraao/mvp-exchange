@@ -1,0 +1,23 @@
+.page-travel-team__main {
+    position: relative;
+    padding-top: 148px;
+    padding-bottom: 68px;
+    background-image: url(../img/site-background-1.png), url(../img/site-background-2.png);
+    background-size: contain, 1233px;
+    background-position-y: 1000px, top;
+    background-repeat: no-repeat;
+}
+
+.page-travel-team__main:before {
+    content: '';
+    position: absolute;
+    background: #000;
+    width: 6px;
+    height: 56px;
+    display: block;
+    top: 16px;
+    margin: 0 auto;
+    left: 0;
+    right: 0;
+    border-radius: 20px;    
+}

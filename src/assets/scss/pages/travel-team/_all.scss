@@ -1,0 +1,7 @@
+@import 'page-travel-team';
+
+.page-travel-team {
+    @import 'main';
+    @import 'sections';
+    @import 'testimonials';
+}
