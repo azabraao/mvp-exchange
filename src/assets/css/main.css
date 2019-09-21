@@ -235,6 +235,10 @@ button {
 .block {
   display: block; }
 
+.spaced-pipe {
+  display: inline-block;
+  margin: 0 10px; }
+
 .container {
   padding: 0 2rem; }
 
@@ -824,6 +828,9 @@ button {
 .content-section {
   margin-top: 95px; }
 
+.content-group {
+  padding: 15px 0; }
+
 .content-columns .column {
   padding: 0 10px;
   width: 100%; }
@@ -975,6 +982,12 @@ button {
   height: 11px;
   background-size: contain;
   background-repeat: no-repeat; }
+
+.icon-square {
+  width: 5.5px;
+  height: 6px;
+  background: #000;
+  margin-bottom: 2px; }
 
 .quem-e-exchange {
   padding-top: 109px;
@@ -1400,6 +1413,55 @@ button {
   height: 56px;
   display: block;
   top: 16px;
+  margin: 0 auto;
+  left: 0;
+  right: 0;
+  border-radius: 20px; }
+
+.page-bolsa-espanha {
+  padding-top: 80px; }
+
+@media only screen and (min-width: 48rem) {
+  .page-bolsa-espanha {
+    padding-top: 0; } }
+
+.page-bolsa-espanha .pre-reqs {
+  background-image: url(../img/background-pre-reqs.png);
+  background-size: contain;
+  background-position: bottom;
+  background-repeat: no-repeat; }
+
+.page-bolsa-espanha .section {
+  padding: 90px 0; }
+
+.page-bolsa-espanha .site-header {
+  background-image: url(../img/site-header-estude-na-espanha.png);
+  padding-bottom: 50px;
+  position: relative; }
+  .page-bolsa-espanha .site-header .nav--tablet-up .nav__inner {
+    border-bottom: 1.5px solid #000; }
+    .page-bolsa-espanha .site-header .nav--tablet-up .nav__inner .nav__links li a {
+      color: #000; }
+  .page-bolsa-espanha .site-header .content {
+    max-width: 610px;
+    margin: 0 auto;
+    padding: 50px 0; }
+    .page-bolsa-espanha .site-header .content h2 {
+      margin-bottom: 20px; }
+    .page-bolsa-espanha .site-header .content p {
+      margin-bottom: 30px; }
+    .page-bolsa-espanha .site-header .content .btn, .page-bolsa-espanha .site-header .content .btn--primary, .page-bolsa-espanha .site-header .content .btn--primary-inverted {
+      text-transform: uppercase;
+      font-weight: 700; }
+
+.page-bolsa-espanha .site-header:after {
+  content: '';
+  position: absolute;
+  background: #000;
+  width: 6px;
+  height: 146px;
+  display: block;
+  bottom: -20px;
   margin: 0 auto;
   left: 0;
   right: 0;
