@@ -4,6 +4,7 @@
         width: 329px;
         height: 390px;
         box-shadow: 0px 0px 5px -2px $black;
+        background: $white;
         
         .slide__arrows {
             display: flex;
@@ -33,5 +34,12 @@
                 
             }
         }
+    }
+}
+
+.content-slide.size-2 {
+    .slide__inner {
+        width: 329px;
+        height: 280px;
     }
 }

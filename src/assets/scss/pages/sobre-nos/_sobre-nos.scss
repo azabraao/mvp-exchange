@@ -1,0 +1,9 @@
+.page-sobre-nos {
+    padding-top: 80px;
+}
+
+@media only screen and (min-width: $mobile-up) {
+    .page-sobre-nos {
+        padding-top: 0;
+    }
+}

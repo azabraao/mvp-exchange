@@ -1,0 +1,44 @@
+.mascote {
+    .columns {
+        display: flex;
+        flex-direction: column;
+
+        .column {
+            
+        }
+        .column.magni {
+            max-width: 300px;
+            margin: 20px auto;
+        }
+        .column.content {
+            .mascote-title {
+                margin-bottom: 0px;
+            }
+        }
+    }
+}
+
+
+@media only screen and (min-width: $mobile-up) {
+    .mascote {
+        .columns {
+            display: flex;
+            flex-direction: row;
+    
+            .column {
+                width: 50%;
+            }
+            .column.magni {
+                max-width: 300px;
+                margin-top: 0;
+            }
+            .column.content {
+                padding: 80px 20px 20px 20px;
+
+                .mascote-title {
+                    margin-bottom: 0px;
+                }
+            }
+        }
+    }
+}
