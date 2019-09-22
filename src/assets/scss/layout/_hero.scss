@@ -62,6 +62,11 @@
     }
 }
 
+
+.hero--cta.transparent {
+    background-color: $primary-transparent;
+} 
+
 @media only screen and (min-width: $mobile-up) {
     .hero {
         

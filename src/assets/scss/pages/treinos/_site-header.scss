@@ -1,0 +1,50 @@
+.site-header {
+    background-image: url(../img/site-header-estude-na-espanha.png);
+    padding-bottom: 150px;
+    position: relative;
+
+    .nav--tablet-up {
+        .nav__inner {
+            border-bottom: 1.5px solid $black;
+
+            .nav__links  {
+                li a {
+                    color: $black;
+                }
+            }
+        }
+    } 
+
+    .content {
+        max-width: 610px;
+        margin: 0 auto;
+        padding: 50px 0;
+
+        h2 {
+            margin-bottom: 20px;
+        }
+
+        p {
+            margin-bottom: 30px;
+        }
+
+        .btn {
+            text-transform: uppercase;
+            font-weight: 700;
+        }
+    }
+}
+
+.site-header:after {
+    content: '';
+    position: absolute;
+    background: $black;
+    width: 6px;
+    height: 146px;
+    display: block;
+    bottom: -20px;
+    margin: 0 auto;
+    left: 0;
+    right: 0;
+    border-radius: 20px; 
+}

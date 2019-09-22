@@ -297,6 +297,9 @@ button {
     font-size: 20px;
     margin-top: 20px; }
 
+.hero--cta.transparent {
+  background-color: #c7ae69d9; }
+
 @media only screen and (min-width: 48rem) {
   .hero .hero__container, .hero--header .hero__container, .hero--cta .hero__container {
     width: 700px;
@@ -884,6 +887,20 @@ button {
       font-weight: 700;
       max-width: 428px;
       font-size: 100%; } }
+
+.table {
+  max-width: 800px;
+  margin: 0 auto; }
+  .table table {
+    width: 100%; }
+  .table tr td {
+    border: 1px solid #575756;
+    width: 50%;
+    padding: 5px 20px; }
+  .table .table__row-title {
+    padding-left: 30px;
+    font-weight: 700;
+    color: #c7ae69; }
 
 .content {
   max-width: 90%;
@@ -1711,6 +1728,15 @@ button {
 .page-bolsa-high-school .columns-programa-select .content {
   padding-left: 0; }
 
+.page-bolsa-esportiva-faculdade {
+  padding-top: 80px; }
+  .page-bolsa-esportiva-faculdade .estadia-itinerario {
+    margin-top: 50px; }
+
+@media only screen and (min-width: 48rem) {
+  .page-bolsa-esportiva-faculdade {
+    padding-top: 0; } }
+
 .page-bolsa-esportiva-faculdade .site-header {
   background-image: url(../img/site-header-bolsa-esportiva.png);
   padding-bottom: 150px;
@@ -1813,3 +1839,60 @@ button {
 
 .page-bolsa-esportiva-faculdade .faq-section .faq-section__title {
   margin-bottom: 40px; }
+
+.page-treinos {
+  padding-top: 80px; }
+  .page-treinos .estadia-itinerario {
+    margin-top: 50px; }
+
+@media only screen and (min-width: 48rem) {
+  .page-treinos {
+    padding-top: 0; } }
+
+.page-treinos .site-header {
+  background-image: url(../img/site-header-estude-na-espanha.png);
+  padding-bottom: 150px;
+  position: relative; }
+  .page-treinos .site-header .nav--tablet-up .nav__inner {
+    border-bottom: 1.5px solid #000; }
+    .page-treinos .site-header .nav--tablet-up .nav__inner .nav__links li a {
+      color: #000; }
+  .page-treinos .site-header .content {
+    max-width: 610px;
+    margin: 0 auto;
+    padding: 50px 0; }
+    .page-treinos .site-header .content h2 {
+      margin-bottom: 20px; }
+    .page-treinos .site-header .content p {
+      margin-bottom: 30px; }
+    .page-treinos .site-header .content .btn, .page-treinos .site-header .content .btn--primary, .page-treinos .site-header .content .btn--primary-inverted {
+      text-transform: uppercase;
+      font-weight: 700; }
+
+.page-treinos .site-header:after {
+  content: '';
+  position: absolute;
+  background: #000;
+  width: 6px;
+  height: 146px;
+  display: block;
+  bottom: -20px;
+  margin: 0 auto;
+  left: 0;
+  right: 0;
+  border-radius: 20px; }
+
+.page-treinos .message {
+  padding-top: 150px;
+  background-image: url(../img/site-background-2.png);
+  background-size: cover;
+  background-repeat: no-repeat; }
+  .page-treinos .message .content {
+    margin-bottom: 150px; }
+
+.page-treinos .programacao-de-treinos {
+  margin-bottom: 40px; }
+  .page-treinos .programacao-de-treinos h2 {
+    max-width: 500px;
+    margin-left: auto;
+    margin-right: auto; }
