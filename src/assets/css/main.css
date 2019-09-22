@@ -1896,3 +1896,77 @@ button {
     max-width: 500px;
     margin-left: auto;
     margin-right: auto; }
+
+.page-torneios-de-verao {
+  padding-top: 80px; }
+
+@media only screen and (min-width: 48rem) {
+  .page-torneios-de-verao {
+    padding-top: 0; }
+    .page-torneios-de-verao .content img {
+      margin-bottom: 40px; } }
+
+.page-torneios-de-verao .page-torneios-de-verao__main {
+  position: relative;
+  padding-top: 148px;
+  padding-bottom: 100px;
+  background-image: url(../img/site-background-2.png), url(../img/site-background-1.png);
+  background-size: contain;
+  background-position-y: top, bottom;
+  background-repeat: no-repeat; }
+
+.page-torneios-de-verao .page-torneios-de-verao__main:before {
+  content: '';
+  position: absolute;
+  background: #000;
+  width: 6px;
+  height: 56px;
+  display: block;
+  top: 16px;
+  margin: 0 auto;
+  left: 0;
+  right: 0;
+  border-radius: 20px; }
+
+.page-torneios-de-verao .pre-requisitos-valores {
+  margin-top: 50px; }
+
+.page-torneios-de-verao .times-brasileiros {
+  padding: 130px 0; }
+  .page-torneios-de-verao .times-brasileiros .columns {
+    display: flex;
+    flex-direction: column;
+    align-items: center; }
+    .page-torneios-de-verao .times-brasileiros .columns .column.image {
+      margin-top: 20px; }
+      .page-torneios-de-verao .times-brasileiros .columns .column.image figure {
+        width: 200px;
+        height: 150px;
+        border: 1px solid; }
+        .page-torneios-de-verao .times-brasileiros .columns .column.image figure img {
+          max-width: 100%; }
+
+@media only screen and (min-width: 48rem) {
+  .page-torneios-de-verao .times-brasileiros .columns {
+    flex-direction: row; }
+    .page-torneios-de-verao .times-brasileiros .columns .column {
+      width: 50%; }
+    .page-torneios-de-verao .times-brasileiros .columns .column.image {
+      padding-left: 20px; }
+      .page-torneios-de-verao .times-brasileiros .columns .column.image figure {
+        width: 320px;
+        height: 180px; } }
+
+@media only screen and (min-width: 62rem) {
+  .page-torneios-de-verao .times-brasileiros .columns .column.image figure {
+    width: 350px;
+    height: 180px; } }
+
+.page-torneios-de-verao .disney-cup .content-list {
+  display: flex;
+  flex-direction: column;
+  text-align: left; }
+
+@media only screen and (min-width: 48rem) {
+  .page-torneios-de-verao .disney-cup .content-list {
+    padding-left: 40px; } }
