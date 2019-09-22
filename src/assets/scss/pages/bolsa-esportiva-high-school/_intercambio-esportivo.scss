@@ -12,13 +12,46 @@
 }
 
 .intercambio-esportivo {
-    .content__items {
-        .content__item {
-            .content__item-header {
+    padding-top: 40px;
 
+    .content__items {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+
+        .content__item {
+            border: 1px solid $primary;
+            border-radius: 10px;
+            padding: 15px;
+            margin: 10px;
+            width: 90px;
+            text-align: center;
+            display: flex;
+            align-items: center;
+            flex-direction: column;        
+
+            .content__item-header {
+                height: 100px;
+                width: 100%;
             }
             .content__item-footer {
+                line-height: 16px;
+                font-size: 14px;
+                margin-top: 10px;
+            }
+        }
+    }
+}
 
+@media only screen and (min-width: $desktop-up) {
+    .intercambio-esportivo {
+    
+        .content__items {
+            justify-content: space-between;
+
+            .content__item {
+                margin-left: 0;
+                margin-right: 0;
             }
         }
     }

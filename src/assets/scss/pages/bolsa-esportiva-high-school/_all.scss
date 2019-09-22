@@ -1,8 +1,6 @@
-.page-bolsa-high-school {
-    .site-header {
-        
-    }
+@import 'page-bolsa-high-scholl';
 
+.page-bolsa-high-school {
     @import "depoimentos";
     @import "futebol-high-school";
     @import "high-school-f1";
@@ -10,4 +8,6 @@
     @import "intercambio-esportivo";
     @import "main";
     @import "diferenca-j1-f1";
+    @import "site-header";
+    @import "columns-programa-select";
 }

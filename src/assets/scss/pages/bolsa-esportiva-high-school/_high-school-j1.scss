@@ -1,17 +1,49 @@
-.high-school-j1 {
-    .content__columns {
-        .stripe {
 
-        }
-
-        .stripe .left-stripe {
-            .the-stripe {
-
-            }
-        }
-
-        .content__text {
+@media only screen and (min-width: $mobile-up) {
+    .high-school-j1 {
+        .content__columns {
+            display: flex;
             
+            .stripe {
+                width: 40%;
+                position: relative;
+                margin-right: 10px;
+            }
+    
+            .stripe.left-stripe:before {
+                background-image: url(../img/stripe-left.png);
+                content: '';
+                width: 630px;
+                position: absolute;
+                height: 1300px;
+                right: 0px;
+                background-size: 760px;
+                background-repeat: no-repeat;
+                top: -170px;
+                background-position-x: right;
+
+                .the-stripe {
+                }
+            }
+
+            .content__text {
+                width: 60%;
+
+                h2 {
+                    text-align: right;
+                    margin-bottom: 25px;
+                }
+                p {
+                    text-align: left;
+                    margin-bottom: 25px;
+                }
+
+                .quanto-custa {
+                    .text-right {
+                        text-align: right;
+                    }
+                }
+            }
         }
     }
 }

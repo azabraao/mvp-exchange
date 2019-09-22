@@ -1,15 +1,33 @@
-.high-school-f1 {
-    .content__columns {
-        .content__text {
 
-        }
-        .stripe {
+@media only screen and (min-width: $mobile-up) {
+    .high-school-f1 {
+        .content__columns {
+            display: flex;
+            
+            .stripe {
+                width: 40%;
+                position: relative;
+            }
+    
+            .stripe.right-stripe:before {
+                background-image: url(../img/stripe-right.png);
+                content: '';
+                width: 630px;
+                position: absolute;
+                height: 1300px;
+                left: 0px;
+                background-size: 760px;
+                background-repeat: no-repeat;
+                top: -170px;
+                background-position-x: left;
 
-        }
-
-        .stripe.left-stripe {
-            .the-stripe {
-                
+                .the-stripe {
+                }
+            }
+    
+            .content__text {
+                text-align: left;
+                width: 60%;
             }
         }
     }

@@ -805,6 +805,33 @@ button {
     .content-slide .slide__inner .slide__arrows .slide__arrow-right {
       background-image: url(../img/icon-arrow-right.png); }
 
+.videos {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  max-width: 760px;
+  margin: 0 auto; }
+  .videos .video {
+    width: 338px;
+    height: 176px;
+    margin: 10px; }
+    .videos .video .video__play {
+      width: 50px;
+      height: 50px; }
+
+@media only screen and (min-width: 48rem) {
+  .videos {
+    flex-direction: row;
+    justify-content: space-between; } }
+
+@media only screen and (min-width: 62rem) {
+  .videos {
+    flex-direction: row;
+    justify-content: space-between; }
+    .videos .video {
+      width: 368px;
+      height: 176px; } }
+
 .content {
   max-width: 90%;
   margin-left: auto;
@@ -1466,3 +1493,167 @@ button {
   left: 0;
   right: 0;
   border-radius: 20px; }
+
+.page-bolsa-high-school {
+  padding-top: 80px; }
+
+@media only screen and (min-width: 48rem) {
+  .page-bolsa-high-school {
+    padding-top: 0; } }
+
+.page-bolsa-high-school .depoimentos {
+  padding: 90px 0; }
+  .page-bolsa-high-school .depoimentos h2 {
+    margin-bottom: 60px; }
+
+.page-bolsa-high-school .futebol-high-school .content__items {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center; }
+  .page-bolsa-high-school .futebol-high-school .content__items .content__item {
+    border: 1px solid #c7ae69;
+    border-radius: 10px;
+    padding: 15px;
+    margin: 10px;
+    width: 180px;
+    height: 180px;
+    text-align: center;
+    display: flex;
+    align-items: center;
+    flex-direction: column; }
+
+@media only screen and (min-width: 62rem) {
+  .page-bolsa-high-school .futebol-high-school .content__items {
+    justify-content: space-between; }
+    .page-bolsa-high-school .futebol-high-school .content__items .content__item {
+      margin-left: 0px;
+      margin-right: 0px; } }
+
+@media only screen and (min-width: 48rem) {
+  .page-bolsa-high-school .high-school-f1 .content__columns {
+    display: flex; }
+    .page-bolsa-high-school .high-school-f1 .content__columns .stripe {
+      width: 40%;
+      position: relative; }
+    .page-bolsa-high-school .high-school-f1 .content__columns .stripe.right-stripe:before {
+      background-image: url(../img/stripe-right.png);
+      content: '';
+      width: 630px;
+      position: absolute;
+      height: 1300px;
+      left: 0px;
+      background-size: 760px;
+      background-repeat: no-repeat;
+      top: -170px;
+      background-position-x: left; }
+    .page-bolsa-high-school .high-school-f1 .content__columns .content__text {
+      text-align: left;
+      width: 60%; } }
+
+@media only screen and (min-width: 48rem) {
+  .page-bolsa-high-school .high-school-j1 .content__columns {
+    display: flex; }
+    .page-bolsa-high-school .high-school-j1 .content__columns .stripe {
+      width: 40%;
+      position: relative;
+      margin-right: 10px; }
+    .page-bolsa-high-school .high-school-j1 .content__columns .stripe.left-stripe:before {
+      background-image: url(../img/stripe-left.png);
+      content: '';
+      width: 630px;
+      position: absolute;
+      height: 1300px;
+      right: 0px;
+      background-size: 760px;
+      background-repeat: no-repeat;
+      top: -170px;
+      background-position-x: right; }
+    .page-bolsa-high-school .high-school-j1 .content__columns .content__text {
+      width: 60%; }
+      .page-bolsa-high-school .high-school-j1 .content__columns .content__text h2 {
+        text-align: right;
+        margin-bottom: 25px; }
+      .page-bolsa-high-school .high-school-j1 .content__columns .content__text p {
+        text-align: left;
+        margin-bottom: 25px; }
+      .page-bolsa-high-school .high-school-j1 .content__columns .content__text .quanto-custa .text-right {
+        text-align: right; } }
+
+.page-bolsa-high-school .intercambio-esportivo {
+  padding-top: 40px; }
+  .page-bolsa-high-school .intercambio-esportivo .content__items {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center; }
+    .page-bolsa-high-school .intercambio-esportivo .content__items .content__item {
+      border: 1px solid #c7ae69;
+      border-radius: 10px;
+      padding: 15px;
+      margin: 10px;
+      width: 90px;
+      text-align: center;
+      display: flex;
+      align-items: center;
+      flex-direction: column; }
+      .page-bolsa-high-school .intercambio-esportivo .content__items .content__item .content__item-header {
+        height: 100px;
+        width: 100%; }
+      .page-bolsa-high-school .intercambio-esportivo .content__items .content__item .content__item-footer {
+        line-height: 16px;
+        font-size: 14px;
+        margin-top: 10px; }
+
+@media only screen and (min-width: 62rem) {
+  .page-bolsa-high-school .intercambio-esportivo .content__items {
+    justify-content: space-between; }
+    .page-bolsa-high-school .intercambio-esportivo .content__items .content__item {
+      margin-left: 0;
+      margin-right: 0; } }
+
+.page-bolsa-high-school .page-bolsa-high-school__main {
+  background-image: url(../img/background-1-estude-na-espanha.png);
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position-y: 80px;
+  background-position-x: center;
+  overflow: hidden; }
+  .page-bolsa-high-school .page-bolsa-high-school__main .content h2 {
+    margin-bottom: 25px; }
+  .page-bolsa-high-school .page-bolsa-high-school__main .content p {
+    margin-bottom: 25px; }
+
+.page-bolsa-high-school .site-header {
+  background-image: url(../img/site-header-bolsa-esportiva.png);
+  padding-bottom: 150px;
+  position: relative; }
+  .page-bolsa-high-school .site-header .nav--tablet-up .nav__inner {
+    border-bottom: 1.5px solid #000; }
+    .page-bolsa-high-school .site-header .nav--tablet-up .nav__inner .nav__links li a {
+      color: #000; }
+  .page-bolsa-high-school .site-header .content {
+    max-width: 610px;
+    margin: 0 auto;
+    padding: 50px 0; }
+    .page-bolsa-high-school .site-header .content h2 {
+      margin-bottom: 20px; }
+    .page-bolsa-high-school .site-header .content p {
+      margin-bottom: 30px; }
+    .page-bolsa-high-school .site-header .content .btn, .page-bolsa-high-school .site-header .content .btn--primary, .page-bolsa-high-school .site-header .content .btn--primary-inverted {
+      text-transform: uppercase;
+      font-weight: 700; }
+
+.page-bolsa-high-school .site-header:after {
+  content: '';
+  position: absolute;
+  background: #000;
+  width: 6px;
+  height: 66px;
+  display: block;
+  bottom: 50px;
+  margin: 0 auto;
+  left: 0;
+  right: 0;
+  border-radius: 20px; }
+
+.page-bolsa-high-school .columns-programa-select .content {
+  padding-left: 0; }
