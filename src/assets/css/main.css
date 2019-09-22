@@ -321,6 +321,9 @@ button {
   text-transform: uppercase;
   line-height: 33px; }
 
+.section.section-1 {
+  padding: 90px 0; }
+
 .nav--mobile {
   padding: 1rem 0;
   max-height: 80px;
@@ -831,6 +834,56 @@ button {
     .videos .video {
       width: 368px;
       height: 176px; } }
+
+.faq .faq-questions .faq-question {
+  box-shadow: 0px 0px 5px -2px #000;
+  border-radius: 10px;
+  margin: 0 auto 20px auto;
+  max-width: 800px; }
+  .faq .faq-questions .faq-question .faq-question__header {
+    padding: 10px 20px;
+    display: flex;
+    align-items: center;
+    min-height: 69px; }
+    .faq .faq-questions .faq-question .faq-question__header .faq-question__title {
+      width: 90%; }
+      .faq .faq-questions .faq-question .faq-question__header .faq-question__title h2 {
+        font-family: "Titillium Web", "Montserrat", sans-serif;
+        text-transform: uppercase;
+        font-weight: 700;
+        max-width: 428px;
+        font-size: 13px; }
+    .faq .faq-questions .faq-question .faq-question__header .faq-question__icon {
+      background-image: url(../img/arrow-down.png);
+      width: 26px;
+      height: 20px;
+      background-repeat: no-repeat;
+      transform: rotate(0deg);
+      transition: transform .7s;
+      margin-left: 20px; }
+  .faq .faq-questions .faq-question .faq-question__header.active .faq-question__icon {
+    transform: rotate(-180deg);
+    transition: transform .7s; }
+  .faq .faq-questions .faq-question .faq-question__body {
+    max-height: 0px;
+    overflow: hidden; }
+    .faq .faq-questions .faq-question .faq-question__body p:not(:last-child) {
+      margin-bottom: 10px; }
+  .faq .faq-questions .faq-question .faq-question__body.active {
+    padding: 0 20px 20px 20px;
+    margin-top: 10px;
+    max-height: 500px;
+    transition: max-height 1s; }
+
+@media only screen and (min-width: 48rem) {
+  .faq .faq-questions .faq-question .faq-question__header .faq-question__title {
+    width: 80%; }
+    .faq .faq-questions .faq-question .faq-question__header .faq-question__title h2 {
+      font-family: "Titillium Web", "Montserrat", sans-serif;
+      text-transform: uppercase;
+      font-weight: 700;
+      max-width: 428px;
+      font-size: 100%; } }
 
 .content {
   max-width: 90%;
@@ -1657,3 +1710,106 @@ button {
 
 .page-bolsa-high-school .columns-programa-select .content {
   padding-left: 0; }
+
+.page-bolsa-esportiva-faculdade .site-header {
+  background-image: url(../img/site-header-bolsa-esportiva.png);
+  padding-bottom: 150px;
+  position: relative; }
+  .page-bolsa-esportiva-faculdade .site-header .nav--tablet-up .nav__inner {
+    border-bottom: 1.5px solid #000; }
+    .page-bolsa-esportiva-faculdade .site-header .nav--tablet-up .nav__inner .nav__links li a {
+      color: #000; }
+  .page-bolsa-esportiva-faculdade .site-header .content {
+    max-width: 610px;
+    margin: 0 auto;
+    padding: 50px 0; }
+    .page-bolsa-esportiva-faculdade .site-header .content h2 {
+      margin-bottom: 20px; }
+    .page-bolsa-esportiva-faculdade .site-header .content p {
+      margin-bottom: 30px; }
+    .page-bolsa-esportiva-faculdade .site-header .content .btn, .page-bolsa-esportiva-faculdade .site-header .content .btn--primary, .page-bolsa-esportiva-faculdade .site-header .content .btn--primary-inverted {
+      text-transform: uppercase;
+      font-weight: 700; }
+
+.page-bolsa-esportiva-faculdade .site-header:after {
+  content: '';
+  position: absolute;
+  background: #000;
+  width: 6px;
+  height: 66px;
+  display: block;
+  bottom: 50px;
+  margin: 0 auto;
+  left: 0;
+  right: 0;
+  border-radius: 20px; }
+
+.page-bolsa-esportiva-faculdade .o-que-a-exchange-faz .columns {
+  display: flex;
+  flex-direction: column;
+  align-items: center; }
+  .page-bolsa-esportiva-faculdade .o-que-a-exchange-faz .columns .column.content {
+    background: #c7ae69;
+    border-radius: 15px;
+    color: #fff;
+    padding: 20px; }
+    .page-bolsa-esportiva-faculdade .o-que-a-exchange-faz .columns .column.content h2 {
+      color: #fff; }
+  .page-bolsa-esportiva-faculdade .o-que-a-exchange-faz .columns .column.list {
+    padding: 20px; }
+    .page-bolsa-esportiva-faculdade .o-que-a-exchange-faz .columns .column.list .list__item {
+      position: relative;
+      padding-left: 20px; }
+    .page-bolsa-esportiva-faculdade .o-que-a-exchange-faz .columns .column.list .list__item:before {
+      position: absolute;
+      content: '';
+      left: 0;
+      border-radius: 50%;
+      height: 10px;
+      width: 10px;
+      background: #c7ae69;
+      margin: auto;
+      top: 0;
+      bottom: 0; }
+
+@media only screen and (min-width: 48rem) {
+  .page-bolsa-esportiva-faculdade .o-que-a-exchange-faz .columns {
+    flex-direction: row;
+    align-items: flex-start; }
+    .page-bolsa-esportiva-faculdade .o-que-a-exchange-faz .columns .column {
+      width: 50%; }
+      .page-bolsa-esportiva-faculdade .o-que-a-exchange-faz .columns .column .column__inner {
+        width: 360px; }
+    .page-bolsa-esportiva-faculdade .o-que-a-exchange-faz .columns .column.content {
+      padding: 50px 20px; }
+      .page-bolsa-esportiva-faculdade .o-que-a-exchange-faz .columns .column.content .column__inner {
+        margin-left: auto; }
+    .page-bolsa-esportiva-faculdade .o-que-a-exchange-faz .columns .column.list .column__inner {
+      margin-right: auto; } }
+
+.page-bolsa-esportiva-faculdade .content h2 {
+  margin-bottom: 25px; }
+
+.page-bolsa-esportiva-faculdade .pre-reqs .columns {
+  display: flex;
+  flex-direction: column;
+  align-items: center; }
+
+.page-bolsa-esportiva-faculdade .pre-reqs .column.slide .slide__inner {
+  width: 280px;
+  margin-top: 50px; }
+
+@media only screen and (min-width: 48rem) {
+  .page-bolsa-esportiva-faculdade .pre-reqs .columns {
+    flex-direction: row; }
+  .page-bolsa-esportiva-faculdade .pre-reqs .column.content {
+    margin-right: 20px;
+    width: 421px; }
+  .page-bolsa-esportiva-faculdade .pre-reqs .column.slide .slide__inner {
+    width: 329px;
+    height: 280px;
+    background: #fff;
+    margin-top: 0; } }
+
+.page-bolsa-esportiva-faculdade .faq-section .faq-section__title {
+  margin-bottom: 40px; }

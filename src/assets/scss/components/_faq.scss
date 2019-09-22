@@ -1,0 +1,87 @@
+.faq {
+    .faq-questions {
+        .faq-question {
+            box-shadow: 0px 0px 5px -2px $black;
+            border-radius: 10px;
+            margin: 0 auto 20px auto;
+            max-width: 800px;
+            
+            .faq-question__header {
+                padding: 10px 20px;
+                display: flex;
+                align-items: center;
+                min-height: 69px;
+                
+                .faq-question__title {
+                    width: 90%;
+                    
+                    h2 {
+                        font-family: $font-primary;
+                        text-transform: uppercase;
+                        font-weight: 700;
+                        max-width: 428px;
+                        font-size: 13px;                
+                    }
+                }
+                .faq-question__icon {
+                    background-image: url(../img/arrow-down.png);
+                    width: 26px;
+                    height: 20px;
+                    background-repeat: no-repeat;
+                    transform: rotate(0deg);
+                    transition: transform .7s;
+                    margin-left: 20px;
+                }
+            }
+            
+            .faq-question__header.active {
+                .faq-question__icon {
+                    transform: rotate(-180deg);
+                    transition: transform .7s;
+                }
+            }
+            
+            .faq-question__body {
+                max-height: 0px;
+                overflow: hidden;
+                
+                p:not(:last-child) {
+                    margin-bottom: 10px;
+                }
+            }
+            .faq-question__body.hidden {
+                
+            }
+            
+            .faq-question__body.active {
+                padding: 0 20px 20px 20px;
+                margin-top: 10px;
+                max-height: 500px;
+                transition: max-height 1s;
+            }            
+        }
+    }
+}
+
+@media only screen and (min-width: $mobile-up) {
+    .faq {
+        .faq-questions {
+            .faq-question {
+                .faq-question__header {
+                    
+                    .faq-question__title {
+                        width: 80%;
+                        
+                        h2 {
+                            font-family: $font-primary;
+                            text-transform: uppercase;
+                            font-weight: 700;
+                            max-width: 428px;
+                            font-size: 100%;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
