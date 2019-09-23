@@ -20,5 +20,7 @@ const faq =  {
     }
 }
 
-nav.init();
-faq.init();
+$(document).ready(function() {
+    nav.init();
+    faq.init();
+})

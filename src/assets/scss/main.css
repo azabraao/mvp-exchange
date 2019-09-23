@@ -85,6 +85,9 @@ a,
 button {
   font-family: "Titillium Web", "Montserrat", sans-serif; }
 
+html {
+  scroll-behavior: smooth; }
+
 .bg-primary {
   background-color: #c7ae69; }
 
@@ -363,9 +366,12 @@ button {
         color: #000;
         text-decoration: none; }
 
+.nav-toggler:focus {
+  outline: 1px solid #c7ae69; }
+
 .nav-toggler {
   background: transparent;
-  border: 1px solid #c7ae69;
+  border: none;
   display: flex;
   flex-direction: column;
   justify-content: space-evenly;
@@ -375,7 +381,7 @@ button {
     display: block;
     background: #c7ae69;
     width: 28px;
-    height: 2px;
+    height: 3.3px;
     border-radius: 5px; }
 
 .nav.active {
@@ -444,6 +450,8 @@ button {
   background: #fff; }
   .nav.white-theme .nav__inner .nav__links li a {
     color: #000; }
+  .nav.white-theme .nav__inner .nav__links li a:hover {
+    color: #c7ae69; }
 
 .site-header {
   background-image: url("../img/site-header-background-overlay.png"), url("../img/site-header-background.png");
@@ -856,7 +864,8 @@ button {
     padding: 10px 20px;
     display: flex;
     align-items: center;
-    min-height: 69px; }
+    min-height: 69px;
+    cursor: pointer; }
     .faq .faq-questions .faq-question .faq-question__header .faq-question__title {
       width: 90%; }
       .faq .faq-questions .faq-question .faq-question__header .faq-question__title h2 {
@@ -871,21 +880,25 @@ button {
       height: 20px;
       background-repeat: no-repeat;
       transform: rotate(0deg);
-      transition: transform .7s;
+      transition: transform .4s;
       margin-left: 20px; }
   .faq .faq-questions .faq-question .faq-question__header.active .faq-question__icon {
     transform: rotate(-180deg);
-    transition: transform .7s; }
+    transition: transform .4s; }
   .faq .faq-questions .faq-question .faq-question__body {
     max-height: 0px;
-    overflow: hidden; }
+    overflow: hidden;
+    transition: all .2s;
+    padding: 0 20px; }
     .faq .faq-questions .faq-question .faq-question__body p:not(:last-child) {
       margin-bottom: 10px; }
   .faq .faq-questions .faq-question .faq-question__body.active {
     padding: 0 20px 20px 20px;
     margin-top: 10px;
+    padding: 0 20px 20px 20px;
+    margin-top: 10px;
     max-height: 500px;
-    transition: max-height 1s; }
+    transition: all .5s; }
 
 @media only screen and (min-width: 48rem) {
   .faq .faq-questions .faq-question .faq-question__header .faq-question__title {
@@ -948,7 +961,7 @@ button {
 .content-list .content-list__item {
   padding-left: 20px;
   position: relative;
-  display: inline-block; }
+  display: block; }
 
 .content-list .content-list__item:before {
   content: '';
@@ -1548,6 +1561,8 @@ button {
     border-bottom: 1.5px solid #000; }
     .page-bolsa-espanha .site-header .nav--tablet-up .nav__inner .nav__links li a {
       color: #000; }
+    .page-bolsa-espanha .site-header .nav--tablet-up .nav__inner .nav__links li a:hover {
+      color: #c7ae69; }
   .page-bolsa-espanha .site-header .content {
     max-width: 610px;
     margin: 0 auto;
@@ -1669,18 +1684,20 @@ button {
       border-radius: 10px;
       padding: 15px;
       margin: 10px;
-      width: 90px;
+      width: 101px;
+      background-color: #ffffffb0;
       text-align: center;
       display: flex;
       align-items: center;
       flex-direction: column; }
       .page-bolsa-high-school .intercambio-esportivo .content__items .content__item .content__item-header {
         height: 100px;
-        width: 100%; }
+        width: 100%;
+        margin-bottom: 10px; }
       .page-bolsa-high-school .intercambio-esportivo .content__items .content__item .content__item-footer {
         line-height: 16px;
         font-size: 14px;
-        margin-top: 10px; }
+        margin-top: auto; }
 
 @media only screen and (min-width: 62rem) {
   .page-bolsa-high-school .intercambio-esportivo .content__items {
@@ -1709,6 +1726,8 @@ button {
     border-bottom: 1.5px solid #000; }
     .page-bolsa-high-school .site-header .nav--tablet-up .nav__inner .nav__links li a {
       color: #000; }
+    .page-bolsa-high-school .site-header .nav--tablet-up .nav__inner .nav__links li a:hover {
+      color: #c7ae69; }
   .page-bolsa-high-school .site-header .content {
     max-width: 610px;
     margin: 0 auto;
@@ -1754,6 +1773,8 @@ button {
     border-bottom: 1.5px solid #000; }
     .page-bolsa-esportiva-faculdade .site-header .nav--tablet-up .nav__inner .nav__links li a {
       color: #000; }
+    .page-bolsa-esportiva-faculdade .site-header .nav--tablet-up .nav__inner .nav__links li a:hover {
+      color: #c7ae69; }
   .page-bolsa-esportiva-faculdade .site-header .content {
     max-width: 610px;
     margin: 0 auto;
@@ -1866,6 +1887,8 @@ button {
     border-bottom: 1.5px solid #000; }
     .page-treinos .site-header .nav--tablet-up .nav__inner .nav__links li a {
       color: #000; }
+    .page-treinos .site-header .nav--tablet-up .nav__inner .nav__links li a:hover {
+      color: #c7ae69; }
   .page-treinos .site-header .content {
     max-width: 610px;
     margin: 0 auto;
