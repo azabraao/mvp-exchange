@@ -1,34 +1,65 @@
 .parceiros {
     padding: 86px 0 59px 0;
-
+    
     .parceiros__list {
         max-width: 823px;
         margin: 0 auto;
-        display: flex;
-        justify-content: space-around;
+        // display: flex;
+        // justify-content: space-around;
         padding: 22px 0;
-
+        
         .parceiros__list-item {
             background: $primary;
             border-radius: 10px;
             width: 110px;
-            height: 110px;            
+            height: 110px;
+            margin: 10px;     
         }
     }
-
+    
     .parceiros__slide-dots {
         display: flex;
         margin: 0 auto;
         margin-top: 50px;
         width: 85px;
         justify-content: space-between;
-
+        
         .parceiros__slide-dot {
             border-radius: 50%;
             height: 12px;
             width: 12px;
             background: $primary;
             display: block;
+        }
+    }
+    
+    .slick-dots {
+        display: flex;
+        justify-content: center;
+        
+        bottom: -45px;
+        
+        list-style-type: none;
+        
+        li {
+            margin: 0 0.25rem;
+            
+            button {
+                display: block;
+                width: 12px;
+                height: 12px;
+                padding: 0;
+                
+                border: none;
+                border-radius: 100%;
+                background-color: $primary;
+                
+                text-indent: -9999px;
+            }
+        }
+
+        li.slick-active button {
+            background-color: $primary-dark;
         }
     }
 }
