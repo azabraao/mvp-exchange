@@ -11,8 +11,14 @@ const nav = {
 
 const faq =  {
     init() {
-        
+        $('.jsFaqHeader').on('click', faq.showQuestion);
+    },
+    showQuestion() {
+        console.log('click')
+        $(this).next().toggleClass('active')
+        $(this).toggleClass('active')
     }
 }
 
 nav.init();
+faq.init();
