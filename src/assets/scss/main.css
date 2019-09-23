@@ -1,4 +1,4 @@
-@import url("https://fonts.googleapis.com/css?family=Montserrat:200,400,500,700|Titillium+Web:300,400,500,600,700&display=swap");
+@import url("https://fonts.googleapis.com/css?family=Montserrat:200,400,500,700|Titillium+Web:200,300,400,500,600,700&display=swap");
 /*! minireset.css v0.0.5 | MIT License | github.com/jgthms/minireset.css */
 html,
 body,
@@ -134,7 +134,7 @@ button {
   background-color: ""; }
 
 .bg-grey-lighter {
-  background-color: ""; }
+  background-color: #f4f2f2; }
 
 .bg-grey-dark {
   background-color: ""; }
@@ -191,7 +191,7 @@ button {
   color: ""; }
 
 .color-grey-lighter {
-  color: ""; }
+  color: #f4f2f2; }
 
 .color-grey-dark {
   color: ""; }
@@ -235,6 +235,14 @@ button {
 .block {
   display: block; }
 
+.spaced-pipe {
+  display: inline-block;
+  margin: 0 10px; }
+
+.horizontal-centered {
+  margin-left: auto;
+  margin-right: auto; }
+
 .container {
   padding: 0 2rem; }
 
@@ -260,8 +268,21 @@ button {
     width: 260px;
     flex-direction: column; }
 
-.hero--header .hero__title {
-  text-align: center; }
+.hero--header {
+  background-image: url("../img/site-header-background-overlay.png"), url("../img/site-header-background.png");
+  padding: 38px 0 28px 0;
+  background-size: cover;
+  background-repeat: no-repeat; }
+  .hero--header .hero__title {
+    text-align: center;
+    width: 100%; }
+    .hero--header .hero__title h1 {
+      font-family: "Titillium Web", "Montserrat", sans-serif;
+      font-size: 37px;
+      font-weight: 700;
+      margin-bottom: 2px;
+      color: #fff;
+      text-transform: uppercase; }
 
 .hero--cta {
   background: #c7ae69;
@@ -279,6 +300,9 @@ button {
     text-align: center;
     font-size: 20px;
     margin-top: 20px; }
+
+.hero--cta.transparent {
+  background-color: #c7ae69d9; }
 
 @media only screen and (min-width: 48rem) {
   .hero .hero__container, .hero--header .hero__container, .hero--cta .hero__container {
@@ -303,6 +327,9 @@ button {
   font-size: 28px;
   text-transform: uppercase;
   line-height: 33px; }
+
+.section.section-1 {
+  padding: 90px 0; }
 
 .nav--mobile {
   padding: 1rem 0;
@@ -412,6 +439,11 @@ button {
       padding: 0; }
       .nav--tablet-up .nav__inner .nav__links li a {
         font-size: 13px; } }
+
+.nav.white-theme {
+  background: #fff; }
+  .nav.white-theme .nav__inner .nav__links li a {
+    color: #000; }
 
 .site-header {
   background-image: url("../img/site-header-background-overlay.png"), url("../img/site-header-background.png");
@@ -600,32 +632,77 @@ button {
           font-size: 9.8px;
           font-family: "Montserrat", sans-serif; }
   .site-footer .site-footer__body {
-    padding-top: 42px; }
+    padding-top: 42px;
+    padding-bottom: 19px;
+    border-bottom: 1px solid #c7ae69; }
     .site-footer .site-footer__body .site-footer__row {
       display: flex;
-      justify-content: space-between; }
+      justify-content: space-between;
+      padding-bottom: 34px; }
+      .site-footer .site-footer__body .site-footer__row .site-footer__column {
+        width: 258px; }
+        .site-footer .site-footer__body .site-footer__row .site-footer__column .site-footer__links .site-footer__links-title {
+          font-family: "Titillium Web", "Montserrat", sans-serif;
+          font-weight: 700;
+          text-transform: uppercase;
+          color: #c7ae69;
+          font-size: 22px;
+          margin-bottom: 13px; }
+        .site-footer .site-footer__body .site-footer__row .site-footer__column .site-footer__links .site-footer__links-list {
+          display: flex;
+          flex-direction: column; }
+          .site-footer .site-footer__body .site-footer__row .site-footer__column .site-footer__links .site-footer__links-list .site-footer__link {
+            padding-left: 20px;
+            position: relative;
+            color: #fff;
+            text-decoration: none;
+            font-size: 14px;
+            font-weight: 200;
+            min-height: 23px; }
+          .site-footer .site-footer__body .site-footer__row .site-footer__column .site-footer__links .site-footer__links-list .site-footer__link:before {
+            content: '';
+            width: 10px;
+            height: 10px;
+            background: #c7ae69;
+            display: block;
+            border-radius: 50%;
+            margin-right: 10px;
+            position: absolute;
+            left: 0px;
+            top: 0;
+            bottom: 0;
+            margin: auto 0; }
+  .site-footer .site-footer__footer {
+    text-align: center;
+    padding: 20px 0 30px 0; }
+    .site-footer .site-footer__footer p {
+      color: #fff;
+      font-weight: 200;
+      font-size: 14px; }
+
+@media only screen and (max-width: 62rem) {
+  .site-footer .site-footer__body .site-footer__row .site-footer__column {
+    width: calc(100% / 3); } }
+
+@media only screen and (max-width: 48rem) {
+  .site-footer .site-footer__header {
+    flex-direction: column;
+    width: 100%; }
+    .site-footer .site-footer__header .site-footer__social-links {
+      width: 100%;
+      flex-wrap: wrap; }
+      .site-footer .site-footer__header .site-footer__social-links .site-footer__social-link {
+        width: 50%;
+        justify-content: center;
+        height: 30px; }
+  .site-footer .site-footer__body .site-footer__row {
+    flex-direction: column; }
+    .site-footer .site-footer__body .site-footer__row .site-footer__column {
+      width: 100%; }
       .site-footer .site-footer__body .site-footer__row .site-footer__column .site-footer__links .site-footer__links-title {
-        font-family: "Titillium Web", "Montserrat", sans-serif;
-        font-weight: 700;
-        text-transform: uppercase;
-        color: #c7ae69;
-        font-size: 20px; }
-      .site-footer .site-footer__body .site-footer__row .site-footer__column .site-footer__links .site-footer__links-list {
-        display: flex;
-        flex-direction: column; }
-        .site-footer .site-footer__body .site-footer__row .site-footer__column .site-footer__links .site-footer__links-list .site-footer__link {
-          padding-left: 20px;
-          position: relative; }
-        .site-footer .site-footer__body .site-footer__row .site-footer__column .site-footer__links .site-footer__links-list .site-footer__link:before {
-          content: '';
-          width: 10px;
-          height: 10px;
-          background: #c7ae69;
-          display: block;
-          border-radius: 50%;
-          margin-right: 10px;
-          position: absolute;
-          left: 0; }
+        font-size: 21.8px; }
+    .site-footer .site-footer__body .site-footer__row .site-footer__column:not(:last-child) {
+      padding-bottom: 35px; } }
 
 .boxes {
   display: flex;
@@ -715,15 +792,199 @@ button {
           bottom: 0;
           margin: auto; } }
 
-.content h2 {
-  font-size: 28px;
-  font-weight: 700;
-  margin-bottom: 2px; }
+.content-slide .slide__inner {
+  border-radius: 5px;
+  width: 329px;
+  height: 390px;
+  box-shadow: 0px 0px 5px -2px #000;
+  background: #fff; }
+  .content-slide .slide__inner .slide__arrows {
+    display: flex;
+    justify-content: space-between;
+    padding: 0 20px;
+    height: 100%;
+    align-items: center; }
+    .content-slide .slide__inner .slide__arrows .slide__arrow {
+      background-color: transparent;
+      border: none;
+      background-size: cover;
+      background-position: center;
+      width: 10px;
+      height: 14px; }
+    .content-slide .slide__inner .slide__arrows .slide__arrow-left {
+      background-image: url(../img/icon-arrow-left.png); }
+    .content-slide .slide__inner .slide__arrows .slide__arrow-right {
+      background-image: url(../img/icon-arrow-right.png); }
 
-.content p {
-  font-size: 16.4px;
-  margin-bottom: 14px;
-  line-height: 23px; }
+.content-slide.size-2 .slide__inner {
+  width: 329px;
+  height: 280px; }
+
+.videos {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  max-width: 760px;
+  margin: 0 auto; }
+  .videos .video {
+    width: 338px;
+    height: 176px;
+    margin: 10px; }
+    .videos .video .video__play {
+      width: 50px;
+      height: 50px; }
+
+@media only screen and (min-width: 48rem) {
+  .videos {
+    flex-direction: row;
+    justify-content: space-between; } }
+
+@media only screen and (min-width: 62rem) {
+  .videos {
+    flex-direction: row;
+    justify-content: space-between; }
+    .videos .video {
+      width: 368px;
+      height: 176px; } }
+
+.faq .faq-questions .faq-question {
+  box-shadow: 0px 0px 5px -2px #000;
+  border-radius: 10px;
+  margin: 0 auto 20px auto;
+  max-width: 800px; }
+  .faq .faq-questions .faq-question .faq-question__header {
+    padding: 10px 20px;
+    display: flex;
+    align-items: center;
+    min-height: 69px; }
+    .faq .faq-questions .faq-question .faq-question__header .faq-question__title {
+      width: 90%; }
+      .faq .faq-questions .faq-question .faq-question__header .faq-question__title h2 {
+        font-family: "Titillium Web", "Montserrat", sans-serif;
+        text-transform: uppercase;
+        font-weight: 700;
+        max-width: 428px;
+        font-size: 13px; }
+    .faq .faq-questions .faq-question .faq-question__header .faq-question__icon {
+      background-image: url(../img/arrow-down.png);
+      width: 26px;
+      height: 20px;
+      background-repeat: no-repeat;
+      transform: rotate(0deg);
+      transition: transform .7s;
+      margin-left: 20px; }
+  .faq .faq-questions .faq-question .faq-question__header.active .faq-question__icon {
+    transform: rotate(-180deg);
+    transition: transform .7s; }
+  .faq .faq-questions .faq-question .faq-question__body {
+    max-height: 0px;
+    overflow: hidden; }
+    .faq .faq-questions .faq-question .faq-question__body p:not(:last-child) {
+      margin-bottom: 10px; }
+  .faq .faq-questions .faq-question .faq-question__body.active {
+    padding: 0 20px 20px 20px;
+    margin-top: 10px;
+    max-height: 500px;
+    transition: max-height 1s; }
+
+@media only screen and (min-width: 48rem) {
+  .faq .faq-questions .faq-question .faq-question__header .faq-question__title {
+    width: 80%; }
+    .faq .faq-questions .faq-question .faq-question__header .faq-question__title h2 {
+      font-family: "Titillium Web", "Montserrat", sans-serif;
+      text-transform: uppercase;
+      font-weight: 700;
+      max-width: 428px;
+      font-size: 100%; } }
+
+.table {
+  max-width: 800px;
+  margin: 0 auto; }
+  .table table {
+    width: 100%; }
+  .table tr td {
+    border: 1px solid #575756;
+    width: 50%;
+    padding: 5px 20px; }
+  .table .table__row-title {
+    padding-left: 30px;
+    font-weight: 700;
+    color: #c7ae69; }
+
+.content {
+  max-width: 90%;
+  margin-left: auto;
+  margin-right: auto; }
+  .content h2 {
+    font-size: 28px;
+    font-weight: 700;
+    margin-bottom: 2px;
+    text-transform: uppercase;
+    color: #c7ae69;
+    line-height: 28px;
+    margin-bottom: 10px; }
+  .content p {
+    font-size: 16.4px;
+    margin-bottom: 14px;
+    line-height: 23px; }
+
+.content.centered {
+  text-align: center; }
+
+.content-section {
+  margin-top: 95px; }
+
+.content-group {
+  padding: 15px 0; }
+
+.content-columns .column {
+  padding: 0 10px;
+  width: 100%; }
+
+.content-columns .content-slide {
+  display: flex;
+  justify-content: center; }
+
+.content-list .content-list__item {
+  padding-left: 20px;
+  position: relative;
+  display: inline-block; }
+
+.content-list .content-list__item:before {
+  content: '';
+  width: 10px;
+  height: 10px;
+  background: #c7ae69;
+  display: block;
+  border-radius: 50%;
+  margin-right: 10px;
+  position: absolute;
+  left: 0px;
+  top: 0;
+  bottom: 0;
+  margin: auto 0; }
+
+@media only screen and (min-width: 48rem) {
+  .content-columns {
+    display: flex;
+    flex-direction: row; }
+    .content-columns .column {
+      width: 50%; }
+    .content-columns .content {
+      width: 50%;
+      padding: 0 10px; }
+    .content-columns .content-slide {
+      width: 50%;
+      margin-top: 38px;
+      padding-left: 14px; } }
+
+@media only screen and (min-width: 62rem) {
+  .content-columns .content {
+    width: 60%;
+    padding: 0 54px; }
+  .content-columns .content-slide {
+    width: 40%;
+    padding-left: 28px; } }
 
 .btn, .btn--primary, .btn--primary-inverted {
   border-radius: 5px;
@@ -827,6 +1088,12 @@ button {
   height: 11px;
   background-size: contain;
   background-repeat: no-repeat; }
+
+.icon-square {
+  width: 5.5px;
+  height: 6px;
+  background: #000;
+  margin-bottom: 2px; }
 
 .quem-e-exchange {
   padding-top: 109px;
@@ -1151,3 +1418,619 @@ button {
       transform: rotate(-51deg);
       bottom: 111px;
       left: -47px; } }
+
+.page-ingles {
+  padding-top: 80px; }
+
+@media only screen and (min-width: 48rem) {
+  .page-ingles {
+    padding-top: 0; } }
+
+.page-ingles .page-ingles__main {
+  position: relative;
+  padding-top: 148px;
+  padding-bottom: 148px;
+  background-image: url(../img/site-background-1.png), url(../img/site-background-2.png);
+  background-size: contain,1233px;
+  background-position-y: bottom, top;
+  background-repeat: no-repeat; }
+  .page-ingles .page-ingles__main .video {
+    margin: 0 auto; }
+
+.page-ingles .page-ingles__main:before {
+  content: '';
+  position: absolute;
+  background: #000;
+  width: 6px;
+  height: 56px;
+  display: block;
+  top: 16px;
+  margin: 0 auto;
+  left: 0;
+  right: 0;
+  border-radius: 20px; }
+
+.page-travel-team {
+  padding-top: 80px; }
+  .page-travel-team .estadia-itinerario {
+    margin-top: 50px; }
+
+@media only screen and (min-width: 48rem) {
+  .page-travel-team {
+    padding-top: 0; } }
+
+.page-travel-team .page-travel-team__main {
+  position: relative;
+  padding-top: 148px;
+  padding-bottom: 68px;
+  background-image: url(../img/site-background-1.png), url(../img/site-background-2.png);
+  background-size: contain, 1233px;
+  background-position-y: 1000px, top;
+  background-repeat: no-repeat; }
+
+.page-travel-team .page-travel-team__main:before {
+  content: '';
+  position: absolute;
+  background: #000;
+  width: 6px;
+  height: 56px;
+  display: block;
+  top: 16px;
+  margin: 0 auto;
+  left: 0;
+  right: 0;
+  border-radius: 20px; }
+
+.page-travel-team .section {
+  padding: 90px 0 50px 0; }
+
+.page-travel-team .testimonials .testimonials__title {
+  max-width: 610px;
+  margin-left: auto;
+  margin-right: auto;
+  margin-bottom: 40px; }
+
+.page-travel-team .testimonials .testimonial {
+  margin-bottom: 40px; }
+
+.page-try-out-em-faculdades {
+  padding-top: 80px; }
+
+@media only screen and (min-width: 48rem) {
+  .page-try-out-em-faculdades {
+    padding-top: 0; }
+    .page-try-out-em-faculdades .content img {
+      margin-bottom: 40px; } }
+
+.page-try-out-em-faculdades .page-try-out-em-faculdades__main {
+  position: relative;
+  padding-top: 148px;
+  padding-bottom: 148px;
+  background-image: url(../img/site-background-2.png);
+  background-size: contain;
+  background-position-y: top;
+  background-repeat: no-repeat; }
+
+.page-try-out-em-faculdades .page-try-out-em-faculdades__main:before {
+  content: '';
+  position: absolute;
+  background: #000;
+  width: 6px;
+  height: 56px;
+  display: block;
+  top: 16px;
+  margin: 0 auto;
+  left: 0;
+  right: 0;
+  border-radius: 20px; }
+
+.page-bolsa-espanha {
+  padding-top: 80px; }
+
+@media only screen and (min-width: 48rem) {
+  .page-bolsa-espanha {
+    padding-top: 0; } }
+
+.page-bolsa-espanha .pre-reqs {
+  background-image: url(../img/background-pre-reqs.png);
+  background-size: contain;
+  background-position: bottom;
+  background-repeat: no-repeat; }
+
+.page-bolsa-espanha .section {
+  padding: 90px 0; }
+
+.page-bolsa-espanha .site-header {
+  background-image: url(../img/site-header-estude-na-espanha.png);
+  padding-bottom: 150px;
+  position: relative; }
+  .page-bolsa-espanha .site-header .nav--tablet-up .nav__inner {
+    border-bottom: 1.5px solid #000; }
+    .page-bolsa-espanha .site-header .nav--tablet-up .nav__inner .nav__links li a {
+      color: #000; }
+  .page-bolsa-espanha .site-header .content {
+    max-width: 610px;
+    margin: 0 auto;
+    padding: 50px 0; }
+    .page-bolsa-espanha .site-header .content h2 {
+      margin-bottom: 20px; }
+    .page-bolsa-espanha .site-header .content p {
+      margin-bottom: 30px; }
+    .page-bolsa-espanha .site-header .content .btn, .page-bolsa-espanha .site-header .content .btn--primary, .page-bolsa-espanha .site-header .content .btn--primary-inverted {
+      text-transform: uppercase;
+      font-weight: 700; }
+
+.page-bolsa-espanha .site-header:after {
+  content: '';
+  position: absolute;
+  background: #000;
+  width: 6px;
+  height: 146px;
+  display: block;
+  bottom: -20px;
+  margin: 0 auto;
+  left: 0;
+  right: 0;
+  border-radius: 20px; }
+
+.page-bolsa-high-school {
+  padding-top: 80px; }
+
+@media only screen and (min-width: 48rem) {
+  .page-bolsa-high-school {
+    padding-top: 0; } }
+
+.page-bolsa-high-school .depoimentos {
+  padding: 90px 0; }
+  .page-bolsa-high-school .depoimentos h2 {
+    margin-bottom: 60px; }
+
+.page-bolsa-high-school .futebol-high-school .content__items {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center; }
+  .page-bolsa-high-school .futebol-high-school .content__items .content__item {
+    border: 1px solid #c7ae69;
+    border-radius: 10px;
+    padding: 15px;
+    margin: 10px;
+    width: 180px;
+    height: 180px;
+    text-align: center;
+    display: flex;
+    align-items: center;
+    flex-direction: column; }
+
+@media only screen and (min-width: 62rem) {
+  .page-bolsa-high-school .futebol-high-school .content__items {
+    justify-content: space-between; }
+    .page-bolsa-high-school .futebol-high-school .content__items .content__item {
+      margin-left: 0px;
+      margin-right: 0px; } }
+
+@media only screen and (min-width: 48rem) {
+  .page-bolsa-high-school .high-school-f1 .content__columns {
+    display: flex; }
+    .page-bolsa-high-school .high-school-f1 .content__columns .stripe {
+      width: 40%;
+      position: relative; }
+    .page-bolsa-high-school .high-school-f1 .content__columns .stripe.right-stripe:before {
+      background-image: url(../img/stripe-right.png);
+      content: '';
+      width: 630px;
+      position: absolute;
+      height: 1300px;
+      left: 0px;
+      background-size: 760px;
+      background-repeat: no-repeat;
+      top: -170px;
+      background-position-x: left; }
+    .page-bolsa-high-school .high-school-f1 .content__columns .content__text {
+      text-align: left;
+      width: 60%; } }
+
+@media only screen and (min-width: 48rem) {
+  .page-bolsa-high-school .high-school-j1 .content__columns {
+    display: flex; }
+    .page-bolsa-high-school .high-school-j1 .content__columns .stripe {
+      width: 40%;
+      position: relative;
+      margin-right: 10px; }
+    .page-bolsa-high-school .high-school-j1 .content__columns .stripe.left-stripe:before {
+      background-image: url(../img/stripe-left.png);
+      content: '';
+      width: 630px;
+      position: absolute;
+      height: 1300px;
+      right: 0px;
+      background-size: 760px;
+      background-repeat: no-repeat;
+      top: -170px;
+      background-position-x: right; }
+    .page-bolsa-high-school .high-school-j1 .content__columns .content__text {
+      width: 60%; }
+      .page-bolsa-high-school .high-school-j1 .content__columns .content__text h2 {
+        text-align: right;
+        margin-bottom: 25px; }
+      .page-bolsa-high-school .high-school-j1 .content__columns .content__text p {
+        text-align: left;
+        margin-bottom: 25px; }
+      .page-bolsa-high-school .high-school-j1 .content__columns .content__text .quanto-custa .text-right {
+        text-align: right; } }
+
+.page-bolsa-high-school .intercambio-esportivo {
+  padding-top: 40px; }
+  .page-bolsa-high-school .intercambio-esportivo .content__items {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center; }
+    .page-bolsa-high-school .intercambio-esportivo .content__items .content__item {
+      border: 1px solid #c7ae69;
+      border-radius: 10px;
+      padding: 15px;
+      margin: 10px;
+      width: 90px;
+      text-align: center;
+      display: flex;
+      align-items: center;
+      flex-direction: column; }
+      .page-bolsa-high-school .intercambio-esportivo .content__items .content__item .content__item-header {
+        height: 100px;
+        width: 100%; }
+      .page-bolsa-high-school .intercambio-esportivo .content__items .content__item .content__item-footer {
+        line-height: 16px;
+        font-size: 14px;
+        margin-top: 10px; }
+
+@media only screen and (min-width: 62rem) {
+  .page-bolsa-high-school .intercambio-esportivo .content__items {
+    justify-content: space-between; }
+    .page-bolsa-high-school .intercambio-esportivo .content__items .content__item {
+      margin-left: 0;
+      margin-right: 0; } }
+
+.page-bolsa-high-school .page-bolsa-high-school__main {
+  background-image: url(../img/background-1-estude-na-espanha.png);
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position-y: 80px;
+  background-position-x: center;
+  overflow: hidden; }
+  .page-bolsa-high-school .page-bolsa-high-school__main .content h2 {
+    margin-bottom: 25px; }
+  .page-bolsa-high-school .page-bolsa-high-school__main .content p {
+    margin-bottom: 25px; }
+
+.page-bolsa-high-school .site-header {
+  background-image: url(../img/site-header-bolsa-esportiva.png);
+  padding-bottom: 150px;
+  position: relative; }
+  .page-bolsa-high-school .site-header .nav--tablet-up .nav__inner {
+    border-bottom: 1.5px solid #000; }
+    .page-bolsa-high-school .site-header .nav--tablet-up .nav__inner .nav__links li a {
+      color: #000; }
+  .page-bolsa-high-school .site-header .content {
+    max-width: 610px;
+    margin: 0 auto;
+    padding: 50px 0; }
+    .page-bolsa-high-school .site-header .content h2 {
+      margin-bottom: 20px; }
+    .page-bolsa-high-school .site-header .content p {
+      margin-bottom: 30px; }
+    .page-bolsa-high-school .site-header .content .btn, .page-bolsa-high-school .site-header .content .btn--primary, .page-bolsa-high-school .site-header .content .btn--primary-inverted {
+      text-transform: uppercase;
+      font-weight: 700; }
+
+.page-bolsa-high-school .site-header:after {
+  content: '';
+  position: absolute;
+  background: #000;
+  width: 6px;
+  height: 66px;
+  display: block;
+  bottom: 50px;
+  margin: 0 auto;
+  left: 0;
+  right: 0;
+  border-radius: 20px; }
+
+.page-bolsa-high-school .columns-programa-select .content {
+  padding-left: 0; }
+
+.page-bolsa-esportiva-faculdade {
+  padding-top: 80px; }
+  .page-bolsa-esportiva-faculdade .estadia-itinerario {
+    margin-top: 50px; }
+
+@media only screen and (min-width: 48rem) {
+  .page-bolsa-esportiva-faculdade {
+    padding-top: 0; } }
+
+.page-bolsa-esportiva-faculdade .site-header {
+  background-image: url(../img/site-header-bolsa-esportiva.png);
+  padding-bottom: 150px;
+  position: relative; }
+  .page-bolsa-esportiva-faculdade .site-header .nav--tablet-up .nav__inner {
+    border-bottom: 1.5px solid #000; }
+    .page-bolsa-esportiva-faculdade .site-header .nav--tablet-up .nav__inner .nav__links li a {
+      color: #000; }
+  .page-bolsa-esportiva-faculdade .site-header .content {
+    max-width: 610px;
+    margin: 0 auto;
+    padding: 50px 0; }
+    .page-bolsa-esportiva-faculdade .site-header .content h2 {
+      margin-bottom: 20px; }
+    .page-bolsa-esportiva-faculdade .site-header .content p {
+      margin-bottom: 30px; }
+    .page-bolsa-esportiva-faculdade .site-header .content .btn, .page-bolsa-esportiva-faculdade .site-header .content .btn--primary, .page-bolsa-esportiva-faculdade .site-header .content .btn--primary-inverted {
+      text-transform: uppercase;
+      font-weight: 700; }
+
+.page-bolsa-esportiva-faculdade .site-header:after {
+  content: '';
+  position: absolute;
+  background: #000;
+  width: 6px;
+  height: 66px;
+  display: block;
+  bottom: 50px;
+  margin: 0 auto;
+  left: 0;
+  right: 0;
+  border-radius: 20px; }
+
+.page-bolsa-esportiva-faculdade .o-que-a-exchange-faz .columns {
+  display: flex;
+  flex-direction: column;
+  align-items: center; }
+  .page-bolsa-esportiva-faculdade .o-que-a-exchange-faz .columns .column.content {
+    background: #c7ae69;
+    border-radius: 15px;
+    color: #fff;
+    padding: 20px; }
+    .page-bolsa-esportiva-faculdade .o-que-a-exchange-faz .columns .column.content h2 {
+      color: #fff; }
+  .page-bolsa-esportiva-faculdade .o-que-a-exchange-faz .columns .column.list {
+    padding: 20px; }
+    .page-bolsa-esportiva-faculdade .o-que-a-exchange-faz .columns .column.list .list__item {
+      position: relative;
+      padding-left: 20px; }
+    .page-bolsa-esportiva-faculdade .o-que-a-exchange-faz .columns .column.list .list__item:before {
+      position: absolute;
+      content: '';
+      left: 0;
+      border-radius: 50%;
+      height: 10px;
+      width: 10px;
+      background: #c7ae69;
+      margin: auto;
+      top: 0;
+      bottom: 0; }
+
+@media only screen and (min-width: 48rem) {
+  .page-bolsa-esportiva-faculdade .o-que-a-exchange-faz .columns {
+    flex-direction: row;
+    align-items: flex-start; }
+    .page-bolsa-esportiva-faculdade .o-que-a-exchange-faz .columns .column {
+      width: 50%; }
+      .page-bolsa-esportiva-faculdade .o-que-a-exchange-faz .columns .column .column__inner {
+        width: 360px; }
+    .page-bolsa-esportiva-faculdade .o-que-a-exchange-faz .columns .column.content {
+      padding: 50px 20px; }
+      .page-bolsa-esportiva-faculdade .o-que-a-exchange-faz .columns .column.content .column__inner {
+        margin-left: auto; }
+    .page-bolsa-esportiva-faculdade .o-que-a-exchange-faz .columns .column.list .column__inner {
+      margin-right: auto; } }
+
+.page-bolsa-esportiva-faculdade .content h2 {
+  margin-bottom: 25px; }
+
+.page-bolsa-esportiva-faculdade .pre-reqs .columns {
+  display: flex;
+  flex-direction: column;
+  align-items: center; }
+
+.page-bolsa-esportiva-faculdade .pre-reqs .column.slide .slide__inner {
+  width: 280px;
+  margin-top: 50px; }
+
+@media only screen and (min-width: 48rem) {
+  .page-bolsa-esportiva-faculdade .pre-reqs .columns {
+    flex-direction: row; }
+  .page-bolsa-esportiva-faculdade .pre-reqs .column.content {
+    margin-right: 20px;
+    width: 421px; }
+  .page-bolsa-esportiva-faculdade .pre-reqs .column.slide .slide__inner {
+    width: 329px;
+    height: 280px;
+    background: #fff;
+    margin-top: 0; } }
+
+.page-bolsa-esportiva-faculdade .faq-section .faq-section__title {
+  margin-bottom: 40px; }
+
+.page-treinos {
+  padding-top: 80px; }
+  .page-treinos .estadia-itinerario {
+    margin-top: 50px; }
+
+@media only screen and (min-width: 48rem) {
+  .page-treinos {
+    padding-top: 0; } }
+
+.page-treinos .site-header {
+  background-image: url(../img/site-header-estude-na-espanha.png);
+  padding-bottom: 150px;
+  position: relative; }
+  .page-treinos .site-header .nav--tablet-up .nav__inner {
+    border-bottom: 1.5px solid #000; }
+    .page-treinos .site-header .nav--tablet-up .nav__inner .nav__links li a {
+      color: #000; }
+  .page-treinos .site-header .content {
+    max-width: 610px;
+    margin: 0 auto;
+    padding: 50px 0; }
+    .page-treinos .site-header .content h2 {
+      margin-bottom: 20px; }
+    .page-treinos .site-header .content p {
+      margin-bottom: 30px; }
+    .page-treinos .site-header .content .btn, .page-treinos .site-header .content .btn--primary, .page-treinos .site-header .content .btn--primary-inverted {
+      text-transform: uppercase;
+      font-weight: 700; }
+
+.page-treinos .site-header:after {
+  content: '';
+  position: absolute;
+  background: #000;
+  width: 6px;
+  height: 146px;
+  display: block;
+  bottom: -20px;
+  margin: 0 auto;
+  left: 0;
+  right: 0;
+  border-radius: 20px; }
+
+.page-treinos .message {
+  padding-top: 150px;
+  background-image: url(../img/site-background-2.png);
+  background-size: cover;
+  background-repeat: no-repeat; }
+  .page-treinos .message .content {
+    margin-bottom: 150px; }
+
+.page-treinos .programacao-de-treinos {
+  margin-bottom: 40px; }
+  .page-treinos .programacao-de-treinos h2 {
+    max-width: 500px;
+    margin-left: auto;
+    margin-right: auto; }
+
+.page-torneios-de-verao {
+  padding-top: 80px; }
+
+@media only screen and (min-width: 48rem) {
+  .page-torneios-de-verao {
+    padding-top: 0; }
+    .page-torneios-de-verao .content img {
+      margin-bottom: 40px; } }
+
+.page-torneios-de-verao .page-torneios-de-verao__main {
+  position: relative;
+  padding-top: 148px;
+  padding-bottom: 100px;
+  background-image: url(../img/site-background-2.png), url(../img/site-background-1.png);
+  background-size: contain;
+  background-position-y: top, bottom;
+  background-repeat: no-repeat; }
+
+.page-torneios-de-verao .page-torneios-de-verao__main:before {
+  content: '';
+  position: absolute;
+  background: #000;
+  width: 6px;
+  height: 56px;
+  display: block;
+  top: 16px;
+  margin: 0 auto;
+  left: 0;
+  right: 0;
+  border-radius: 20px; }
+
+.page-torneios-de-verao .pre-requisitos-valores {
+  margin-top: 50px; }
+
+.page-torneios-de-verao .times-brasileiros {
+  padding: 130px 0; }
+  .page-torneios-de-verao .times-brasileiros .columns {
+    display: flex;
+    flex-direction: column;
+    align-items: center; }
+    .page-torneios-de-verao .times-brasileiros .columns .column.image {
+      margin-top: 20px; }
+      .page-torneios-de-verao .times-brasileiros .columns .column.image figure {
+        width: 200px;
+        height: 150px;
+        border: 1px solid; }
+        .page-torneios-de-verao .times-brasileiros .columns .column.image figure img {
+          max-width: 100%; }
+
+@media only screen and (min-width: 48rem) {
+  .page-torneios-de-verao .times-brasileiros .columns {
+    flex-direction: row; }
+    .page-torneios-de-verao .times-brasileiros .columns .column {
+      width: 50%; }
+    .page-torneios-de-verao .times-brasileiros .columns .column.image {
+      padding-left: 20px; }
+      .page-torneios-de-verao .times-brasileiros .columns .column.image figure {
+        width: 320px;
+        height: 180px; } }
+
+@media only screen and (min-width: 62rem) {
+  .page-torneios-de-verao .times-brasileiros .columns .column.image figure {
+    width: 350px;
+    height: 180px; } }
+
+.page-torneios-de-verao .disney-cup .content-list {
+  display: flex;
+  flex-direction: column;
+  text-align: left; }
+
+@media only screen and (min-width: 48rem) {
+  .page-torneios-de-verao .disney-cup .content-list {
+    padding-left: 40px; } }
+
+.page-sobre-nos {
+  padding-top: 80px; }
+
+@media only screen and (min-width: 48rem) {
+  .page-sobre-nos {
+    padding-top: 0; } }
+
+.page-sobre-nos .page-sobre-nos__main {
+  position: relative;
+  padding-top: 148px;
+  padding-bottom: 68px;
+  background-image: url(../img/site-background-1.png), url(../img/site-background-2.png);
+  background-size: contain, 1233px;
+  background-position-y: 1000px, top;
+  background-repeat: no-repeat; }
+
+.page-sobre-nos .page-sobre-nos__main:before {
+  content: '';
+  position: absolute;
+  background: #000;
+  width: 6px;
+  height: 56px;
+  display: block;
+  top: 16px;
+  margin: 0 auto;
+  left: 0;
+  right: 0;
+  border-radius: 20px; }
+
+.page-sobre-nos .o-que-significa .content-slide {
+  margin-top: 0; }
+
+.page-sobre-nos .mascote .columns {
+  display: flex;
+  flex-direction: column; }
+  .page-sobre-nos .mascote .columns .column.magni {
+    max-width: 300px;
+    margin: 20px auto; }
+  .page-sobre-nos .mascote .columns .column.content .mascote-title {
+    margin-bottom: 0px; }
+
+@media only screen and (min-width: 48rem) {
+  .page-sobre-nos .mascote .columns {
+    display: flex;
+    flex-direction: row; }
+    .page-sobre-nos .mascote .columns .column {
+      width: 50%; }
+    .page-sobre-nos .mascote .columns .column.magni {
+      max-width: 300px;
+      margin-top: 0; }
+    .page-sobre-nos .mascote .columns .column.content {
+      padding: 80px 20px 20px 20px; }
+      .page-sobre-nos .mascote .columns .column.content .mascote-title {
+        margin-bottom: 0px; } }

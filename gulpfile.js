@@ -45,19 +45,30 @@ gulp.task('sprite', async () => {
 gulp.task('sass', async () => {
     gulp.src('./src/assets/scss/main.scss')
     .pipe(sass().on('error', sass.logError))
-    // .pipe(gulp.dest('./src/assets/scss/'))
-    // .pipe(sourcemaps.init())
-    // .pipe(autoprefixer())
-    // .pipe(concat('main.css'))
-    // .pipe(sourcemaps.write('.'))
     .pipe(gulp.dest('./src/assets/css/'))    
     
-    // .pipe(uglifycss({
-    //     "uglyComments": true
-    // }))
     .pipe(rename('main.min.css'))
     .pipe(gulp.dest('./src/assets/css/'));    
 });
+
+
+gulp.task('sass:build', async () => {
+    gulp.src('./src/assets/scss/main.scss')
+    .pipe(sass().on('error', sass.logError))
+    .pipe(gulp.dest('./src/assets/scss/'))
+    .pipe(sourcemaps.init())
+    .pipe(autoprefixer())
+    .pipe(concat('main.css'))
+    .pipe(sourcemaps.write('.'))
+    .pipe(gulp.dest('./src/assets/css/'))    
+    
+    .pipe(uglifycss({
+        "uglyComments": true
+    }))
+    .pipe(rename('main.min.css'))
+    .pipe(gulp.dest('./src/assets/css/'));    
+});
+
 
 gulp.task('watch', () => {
     // gulp.watch('./src/assets/scss/main.css', gulp.series(['css']));
