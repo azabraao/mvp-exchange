@@ -24,7 +24,8 @@
             border-radius: 10px;
             padding: 15px;
             margin: 10px;
-            width: 90px;
+            width: 101px;
+            background-color: $white-transparent;
             text-align: center;
             display: flex;
             align-items: center;
@@ -33,11 +34,12 @@
             .content__item-header {
                 height: 100px;
                 width: 100%;
+                margin-bottom: 10px;
             }
             .content__item-footer {
                 line-height: 16px;
                 font-size: 14px;
-                margin-top: 10px;
+                margin-top: auto;
             }
         }
     }
