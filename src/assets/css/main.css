@@ -450,6 +450,8 @@ html {
   background: #fff; }
   .nav.white-theme .nav__inner .nav__links li a {
     color: #000; }
+  .nav.white-theme .nav__inner .nav__links li a:hover {
+    color: #c7ae69; }
 
 .site-header {
   background-image: url("../img/site-header-background-overlay.png"), url("../img/site-header-background.png");
@@ -1559,6 +1561,8 @@ html {
     border-bottom: 1.5px solid #000; }
     .page-bolsa-espanha .site-header .nav--tablet-up .nav__inner .nav__links li a {
       color: #000; }
+    .page-bolsa-espanha .site-header .nav--tablet-up .nav__inner .nav__links li a:hover {
+      color: #c7ae69; }
   .page-bolsa-espanha .site-header .content {
     max-width: 610px;
     margin: 0 auto;
@@ -1720,6 +1724,8 @@ html {
     border-bottom: 1.5px solid #000; }
     .page-bolsa-high-school .site-header .nav--tablet-up .nav__inner .nav__links li a {
       color: #000; }
+    .page-bolsa-high-school .site-header .nav--tablet-up .nav__inner .nav__links li a:hover {
+      color: #c7ae69; }
   .page-bolsa-high-school .site-header .content {
     max-width: 610px;
     margin: 0 auto;
@@ -1765,6 +1771,8 @@ html {
     border-bottom: 1.5px solid #000; }
     .page-bolsa-esportiva-faculdade .site-header .nav--tablet-up .nav__inner .nav__links li a {
       color: #000; }
+    .page-bolsa-esportiva-faculdade .site-header .nav--tablet-up .nav__inner .nav__links li a:hover {
+      color: #c7ae69; }
   .page-bolsa-esportiva-faculdade .site-header .content {
     max-width: 610px;
     margin: 0 auto;
@@ -1877,6 +1885,8 @@ html {
     border-bottom: 1.5px solid #000; }
     .page-treinos .site-header .nav--tablet-up .nav__inner .nav__links li a {
       color: #000; }
+    .page-treinos .site-header .nav--tablet-up .nav__inner .nav__links li a:hover {
+      color: #c7ae69; }
   .page-treinos .site-header .content {
     max-width: 610px;
     margin: 0 auto;

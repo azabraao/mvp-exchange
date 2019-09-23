@@ -11,6 +11,9 @@
                 li a {
                     color: $black;
                 }
+                li a:hover {
+                    color: $primary;
+                }
             }
         }
     } 
