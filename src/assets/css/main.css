@@ -85,6 +85,9 @@ a,
 button {
   font-family: "Titillium Web", "Montserrat", sans-serif; }
 
+html {
+  scroll-behavior: smooth; }
+
 .bg-primary {
   background-color: #c7ae69; }
 
@@ -363,9 +366,12 @@ button {
         color: #000;
         text-decoration: none; }
 
+.nav-toggler:focus {
+  outline: 1px solid #c7ae69; }
+
 .nav-toggler {
   background: transparent;
-  border: 1px solid #c7ae69;
+  border: none;
   display: flex;
   flex-direction: column;
   justify-content: space-evenly;
@@ -375,7 +381,7 @@ button {
     display: block;
     background: #c7ae69;
     width: 28px;
-    height: 2px;
+    height: 3.3px;
     border-radius: 5px; }
 
 .nav.active {

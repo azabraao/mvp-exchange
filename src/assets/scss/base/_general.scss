@@ -15,3 +15,7 @@ a,
 button {
     font-family: $font-primary;
 }
+
+html {
+    scroll-behavior: smooth;
+}
