@@ -5,7 +5,7 @@ const nav = {
         $('.jsActiveDropDown').on('click', nav.toggleDropDown);
     },
     toggleDropDown(e) {
-        e.preventDefault();
+        // e.preventDefault();
         $(this).toggleClass('active');
     },
     toggleMenu() {

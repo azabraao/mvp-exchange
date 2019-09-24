@@ -35,13 +35,13 @@
         li {
             padding: .5rem 0;
             
-            a {
+            .nav__link {
                 font-family: $font-primary;
                 color: #000;
                 text-decoration: none;
                 position: relative;
             }
-
+            
             .dropdown {
                 max-height: 0;
                 overflow: hidden;
@@ -51,7 +51,7 @@
         }
         
         li.has-dropdown {
-            > a:after {
+            > .nav__link:after {
                 content: '';
                 background-image: url(../img/icon-arrow-right.png);
                 background-size: contain;
@@ -68,9 +68,14 @@
                 transform: rotate(0deg);
                 transition: transform .3s;
             }
+
+            .dropdown__link {
+                text-decoration: none;
+                color: $black;
+            }
         }
         li.has-dropdown.active {
-            > a:after {
+            > .nav__link:after {
                 transform: rotate(90deg)
             }
             .dropdown {
@@ -128,7 +133,7 @@
             justify-content: space-between;
             align-items: center;
             height: 116px;
-
+            
             .nav__logo {
                 a {
                     height: 54px;
@@ -149,27 +154,78 @@
                     display: flex;
                     align-items: center;
                     position: relative;
-
-                    a {
+                    // height: 100px;
+                    
+                    .nav__link {
                         font-family: $font-primary;
                         text-decoration: none;
                         color: $white;
                         font-size: 12px;
                         text-align: center;
+                        height: 124px;
+                        display: flex;
+                        align-items: center;
+                        padding: 0 5px;
                     }
-
-                    a:hover {
+                    
+                    .nav__link:hover {
                         color: $primary;
                         transition: color .2s;
                     }
                 }
+
                 li.active:after {
-                    content: '';
-                    width: 100%;
-                    height: 2px;
-                    background: $primary;
-                    position: absolute;
-                    bottom: -4px;
+                    // content: '';
+                    // width: 100%;
+                    // height: 2px;
+                    // background: $primary;
+                    // position: absolute;
+                    // bottom: -4px;
+                }
+                
+                li.has-dropdown {
+                    position: relative;
+                    cursor: pointer;
+
+                    .dropdown {
+                        display: none;
+
+                        .dropdown__link {
+                            text-decoration: none;
+                        }
+                    }
+                }
+
+                li.has-dropdown:hover {
+                    position: relative;
+                    
+                    .dropdown {
+                        display: block;
+                        position: absolute;
+                        background: $primary-transparent;
+                        width: max-content;
+                        top: 90px;                
+                        
+                        li a {
+                            color: $white;
+                            text-align: left;    
+                            padding: 15px;
+                        }
+                        
+                        li:hover {
+                            background: $primary;
+                        }
+                    }
+                }
+
+                li.has-dropdown.active {
+                    > a:after {
+                        transform: rotate(90deg)
+                    }
+                    .dropdown {
+                        max-height: 500px;
+                        overflow: auto;
+                    }
                 }
             }
         }
@@ -196,7 +252,7 @@
                 
                 li {
                     padding: 0;
-
+                    
                     a {
                         font-size: 13px;
                     }
@@ -210,14 +266,14 @@
 
 .nav.white-theme {
     background: $white;
-
+    
     .nav__inner {
         .nav__links {    
             li {
-                a {
+                .nav__link {
                     color: $black;
                 }
-                a:hover {
+                .nav__link:hover {
                     color: $primary;
                 }
             }

@@ -8,10 +8,10 @@
             border-bottom: 1.5px solid $black;
 
             .nav__links  {
-                li a {
+                li .nav__link {
                     color: $black;
                 }
-                li a:hover {
+                li .nav__link:hover {
                     color: $primary;
                 }
             }

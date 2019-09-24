@@ -358,13 +358,44 @@ html {
       background-size: 100%;
       background-repeat: no-repeat; }
   .nav--mobile .nav__links {
-    padding-top: 1rem; }
+    padding-top: 1rem;
+    padding-bottom: 1rem; }
     .nav--mobile .nav__links li {
       padding: .5rem 0; }
-      .nav--mobile .nav__links li a {
+      .nav--mobile .nav__links li .nav__link {
         font-family: "Titillium Web", "Montserrat", sans-serif;
         color: #000;
-        text-decoration: none; }
+        text-decoration: none;
+        position: relative; }
+      .nav--mobile .nav__links li .dropdown {
+        max-height: 0;
+        overflow: hidden;
+        padding-left: 20px;
+        transition: max-height .3s; }
+    .nav--mobile .nav__links li.has-dropdown > .nav__link:after {
+      content: '';
+      background-image: url(../img/icon-arrow-right.png);
+      background-size: contain;
+      width: 12px;
+      height: 12px;
+      position: absolute;
+      display: block;
+      background-repeat: no-repeat;
+      right: -20px;
+      top: 0;
+      background-position: center right;
+      bottom: 0;
+      margin: auto;
+      transform: rotate(0deg);
+      transition: transform .3s; }
+    .nav--mobile .nav__links li.has-dropdown .dropdown__link {
+      text-decoration: none;
+      color: #000; }
+    .nav--mobile .nav__links li.has-dropdown.active > .nav__link:after {
+      transform: rotate(90deg); }
+    .nav--mobile .nav__links li.has-dropdown.active .dropdown {
+      max-height: 500px;
+      overflow: auto; }
 
 .nav-toggler:focus {
   outline: 1px solid #c7ae69; }
@@ -385,8 +416,9 @@ html {
     border-radius: 5px; }
 
 .nav.active {
-  max-height: 500px;
-  transition: max-height .3s; }
+  max-height: 600px;
+  transition: max-height .3s;
+  overflow-y: scroll; }
 
 .nav--tablet-up {
   display: none; }
@@ -418,22 +450,45 @@ html {
           display: flex;
           align-items: center;
           position: relative; }
-          .nav--tablet-up .nav__inner .nav__links li a {
+          .nav--tablet-up .nav__inner .nav__links li .nav__link {
             font-family: "Titillium Web", "Montserrat", sans-serif;
             text-decoration: none;
             color: #fff;
             font-size: 12px;
-            text-align: center; }
-          .nav--tablet-up .nav__inner .nav__links li a:hover {
+            text-align: center;
+            height: 124px;
+            display: flex;
+            align-items: center;
+            padding: 0 5px; }
+          .nav--tablet-up .nav__inner .nav__links li .nav__link:hover {
             color: #c7ae69;
             transition: color .2s; }
-        .nav--tablet-up .nav__inner .nav__links li.active:after {
-          content: '';
-          width: 100%;
-          height: 2px;
-          background: #c7ae69;
-          position: absolute;
-          bottom: -4px; } }
+        .nav--tablet-up .nav__inner .nav__links li.has-dropdown {
+          position: relative;
+          cursor: pointer; }
+          .nav--tablet-up .nav__inner .nav__links li.has-dropdown .dropdown {
+            display: none; }
+            .nav--tablet-up .nav__inner .nav__links li.has-dropdown .dropdown .dropdown__link {
+              text-decoration: none; }
+        .nav--tablet-up .nav__inner .nav__links li.has-dropdown:hover {
+          position: relative; }
+          .nav--tablet-up .nav__inner .nav__links li.has-dropdown:hover .dropdown {
+            display: block;
+            position: absolute;
+            background: #c7ae69d9;
+            width: max-content;
+            top: 90px; }
+            .nav--tablet-up .nav__inner .nav__links li.has-dropdown:hover .dropdown li a {
+              color: #fff;
+              text-align: left;
+              padding: 15px; }
+            .nav--tablet-up .nav__inner .nav__links li.has-dropdown:hover .dropdown li:hover {
+              background: #c7ae69; }
+        .nav--tablet-up .nav__inner .nav__links li.has-dropdown.active > a:after {
+          transform: rotate(90deg); }
+        .nav--tablet-up .nav__inner .nav__links li.has-dropdown.active .dropdown {
+          max-height: 500px;
+          overflow: auto; } }
 
 @media only screen and (min-width: 62rem) {
   .nav--tablet-up .nav__inner .nav__logo a {
@@ -448,14 +503,15 @@ html {
 
 .nav.white-theme {
   background: #fff; }
-  .nav.white-theme .nav__inner .nav__links li a {
+  .nav.white-theme .nav__inner .nav__links li .nav__link {
     color: #000; }
-  .nav.white-theme .nav__inner .nav__links li a:hover {
+  .nav.white-theme .nav__inner .nav__links li .nav__link:hover {
     color: #c7ae69; }
 
 .site-header {
   background-image: url("../img/site-header-background-overlay.png"), url("../img/site-header-background.png");
-  background-size: cover, cover; }
+  background-size: cover, cover;
+  background-position: top center; }
   .site-header .site-header__inner .site-header__columns {
     display: flex;
     flex-direction: row; }
@@ -1001,11 +1057,20 @@ html {
 
 .btn, .btn--primary, .btn--primary-inverted {
   border-radius: 5px;
-  padding: 2px 58px;
-  font-size: 25px;
+  padding: 2px 33px;
+  font-size: 22px;
   display: inline-block;
   border: none;
   text-decoration: none; }
+
+@media only screen and (min-width: 48rem) {
+  .btn, .btn--primary, .btn--primary-inverted {
+    border-radius: 5px;
+    padding: 2px 48px;
+    font-size: 25px;
+    display: inline-block;
+    border: none;
+    text-decoration: none; } }
 
 .btn--primary {
   background: #c7ae69;
@@ -1576,9 +1641,9 @@ html {
   position: relative; }
   .page-bolsa-espanha .site-header .nav--tablet-up .nav__inner {
     border-bottom: 1.5px solid #000; }
-    .page-bolsa-espanha .site-header .nav--tablet-up .nav__inner .nav__links li a {
+    .page-bolsa-espanha .site-header .nav--tablet-up .nav__inner .nav__links li .nav__link {
       color: #000; }
-    .page-bolsa-espanha .site-header .nav--tablet-up .nav__inner .nav__links li a:hover {
+    .page-bolsa-espanha .site-header .nav--tablet-up .nav__inner .nav__links li .nav__link:hover {
       color: #c7ae69; }
   .page-bolsa-espanha .site-header .content {
     max-width: 610px;
@@ -1741,9 +1806,9 @@ html {
   position: relative; }
   .page-bolsa-high-school .site-header .nav--tablet-up .nav__inner {
     border-bottom: 1.5px solid #000; }
-    .page-bolsa-high-school .site-header .nav--tablet-up .nav__inner .nav__links li a {
+    .page-bolsa-high-school .site-header .nav--tablet-up .nav__inner .nav__links li .nav__link {
       color: #000; }
-    .page-bolsa-high-school .site-header .nav--tablet-up .nav__inner .nav__links li a:hover {
+    .page-bolsa-high-school .site-header .nav--tablet-up .nav__inner .nav__links li .nav__link:hover {
       color: #c7ae69; }
   .page-bolsa-high-school .site-header .content {
     max-width: 610px;
@@ -1788,9 +1853,9 @@ html {
   position: relative; }
   .page-bolsa-esportiva-faculdade .site-header .nav--tablet-up .nav__inner {
     border-bottom: 1.5px solid #000; }
-    .page-bolsa-esportiva-faculdade .site-header .nav--tablet-up .nav__inner .nav__links li a {
+    .page-bolsa-esportiva-faculdade .site-header .nav--tablet-up .nav__inner .nav__links li .nav__link {
       color: #000; }
-    .page-bolsa-esportiva-faculdade .site-header .nav--tablet-up .nav__inner .nav__links li a:hover {
+    .page-bolsa-esportiva-faculdade .site-header .nav--tablet-up .nav__inner .nav__links li .nav__link:hover {
       color: #c7ae69; }
   .page-bolsa-esportiva-faculdade .site-header .content {
     max-width: 610px;
@@ -1902,9 +1967,9 @@ html {
   position: relative; }
   .page-treinos .site-header .nav--tablet-up .nav__inner {
     border-bottom: 1.5px solid #000; }
-    .page-treinos .site-header .nav--tablet-up .nav__inner .nav__links li a {
+    .page-treinos .site-header .nav--tablet-up .nav__inner .nav__links li .nav__link {
       color: #000; }
-    .page-treinos .site-header .nav--tablet-up .nav__inner .nav__links li a:hover {
+    .page-treinos .site-header .nav--tablet-up .nav__inner .nav__links li .nav__link:hover {
       color: #c7ae69; }
   .page-treinos .site-header .content {
     max-width: 610px;
