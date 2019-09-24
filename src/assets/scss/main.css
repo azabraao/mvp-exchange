@@ -782,7 +782,14 @@ html {
     .boxes .box .box__cover {
       border-radius: 5px 5px 0 0;
       height: 126px;
-      background: tomato; }
+      background-size: cover;
+      background-repeat: no-repeat; }
+    .boxes .box .box__cover.intercambio-esportivo {
+      background-image: url(../img/programa-intercambio-esportivo.png); }
+    .boxes .box .box__cover.intercambio-academico {
+      background-image: url(../img/programa-intercambio-academico.gif); }
+    .boxes .box .box__cover.viagens {
+      background-image: url(../img/programa-viagens.gif); }
     .boxes .box .box__title {
       padding: 25px 0 18px 0; }
       .boxes .box .box__title h3 {
@@ -1333,8 +1340,10 @@ html {
     width: 120px;
     height: 120px;
     border-radius: 50%;
-    background-color: tomato;
-    border: 7px solid #c7ae69; }
+    background-size: cover;
+    border: 7px solid #c7ae69;
+    background-repeat: no-repeat;
+    background-position: center; }
   .best-structure .best-structure__item:after {
     content: '';
     width: 6px;
@@ -1349,6 +1358,7 @@ html {
     right: 0;
     margin: 0 auto; }
   .best-structure .best-structure__item.item-1 {
+    background-image: url(../img/foto-estrutura-1.png);
     top: 0;
     left: 0; }
   .best-structure .best-structure__item.item-2:after {
@@ -1358,6 +1368,7 @@ html {
     right: 0;
     margin: 0 auto; }
   .best-structure .best-structure__item.item-2 {
+    background-image: url(../img/foto-estrutura-2.gif);
     top: 0;
     right: 0; }
   .best-structure .best-structure__item.item-3:after {
@@ -1366,6 +1377,7 @@ html {
     right: 0;
     margin: auto; }
   .best-structure .best-structure__item.item-3 {
+    background-image: url(../img/foto-estrutura-3.gif);
     bottom: 0;
     left: 0; }
   .best-structure .best-structure__item.item-4:after {
@@ -1374,6 +1386,7 @@ html {
     right: 0;
     margin: auto; }
   .best-structure .best-structure__item.item-4 {
+    background-image: url(../img/foto-estrutura-4.jpg);
     bottom: 0;
     right: 0; }
   .best-structure .best-structure__main {
