@@ -11,7 +11,7 @@
 </head>
 <body>
     <header class="site-header">
-        <nav class="nav--mobile nav jsMobileNav">
+        <nav class="nav--mobile nav active jsMobileNav">
             <div class="container">
                 <div class="nav__inner">
                     <div class="nav__logo">
@@ -26,8 +26,41 @@
                 <ul class="nav__links jsMenulinks">
                     <li><a href="index.html#mvp-exchange">MVP Exchange</a></li>
                     <li><a href="sobre.html">SOBRE</a></li>
-                    <li><a href="">INTERCÂMBIO ESPORTIVO</a></li>
-                    <li><a href="">INTERCÂMBIO ACADÊMICO</a></li>
+                    <li class="has-dropdown jsActiveDropDown">
+                        <a>INTERCÂMBIO ESPORTIVO</a>
+                        <ul class="dropdown">
+                            <li>
+                                <a href="bolsa-esportiva-high-school.html">
+                                    Bolsa Esportiva High School
+                                </a>
+                            </li>
+                            <li>
+                                <a href="bolsa-esportiva-faculdade.html">
+                                    Bolsa Esportiva Faculdade
+                                </a>
+                            </li>
+                            <li>
+                                <a href="bolsa-esportiva-espanha.html">
+                                    Bolsa Esportiva Espanha
+                                </a>
+                            </li>
+                        </ul>
+                    </li>
+                    <li class="has-dropdown jsActiveDropDown">
+                        <a>INTERCÂMBIO ACADÊMICO</a>
+                        <ul class="dropdown">
+                            <li>
+                                <a href="bolsa-academica-high-school.html">
+                                    Bolsa Acadêmica para High School
+                                </a>
+                            </li>
+                            <li>
+                                <a href="bolsa-academica-high-school.html">
+                                    Bolsa Acadêmica para Faculdade 
+                                </a>
+                            </li>
+                        </ul>
+                    </li>
                     <li><a href="ingles.html">INGLÊS</a></li>
                     <li><a href="">VIAGENS</a></li>
                     <li><a href="">CASES</a></li>
@@ -45,8 +78,41 @@
                     <ul class="nav__links">
                         <li><a href="index.html#mvp-exchange">MVP Exchange</a></li>
                         <li><a href="sobre.html">SOBRE</a></li>
-                        <li><a href="">INTERCÂMBIO ESPORTIVO</a></li>
-                        <li><a href="">INTERCÂMBIO ACADÊMICO</a></li>
+                        <li class="has-dropdown jsActiveDropDown">
+                            <a>INTERCÂMBIO ESPORTIVO</a>
+                            <ul class="dropdown">
+                                <li>
+                                    <a href="bolsa-esportiva-high-school.html">
+                                        Bolsa Esportiva High School
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="bolsa-esportiva-faculdade.html">
+                                        Bolsa Esportiva Faculdade
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="bolsa-esportiva-espanha.html">
+                                        Bolsa Esportiva Espanha
+                                    </a>
+                                </li>
+                            </ul>
+                        </li>
+                        <li class="has-dropdown jsActiveDropDown">
+                            <a>INTERCÂMBIO ACADÊMICO</a>
+                            <ul class="dropdown">
+                                <li>
+                                    <a href="bolsa-academica-high-school.html">
+                                        Bolsa Acadêmica para High School
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="bolsa-academica-high-school.html">
+                                        Bolsa Acadêmica para Faculdade 
+                                    </a>
+                                </li>
+                            </ul>
+                        </li>
                         <li><a href="ingles.html">INGLÊS</a></li>
                         <li><a href="">VIAGENS</a></li>
                         <li><a href="">CASES</a></li>
@@ -375,7 +441,7 @@
                             <h3 class="site-footer__links-title">intercâmbio esportivo</h3>
                             <div class="site-footer__links-list">
                                 <a href="bolsa-esportiva-high-school.html" class="site-footer__link">Bolsa Esportiva High School EUA</a>
-                                    <a href="bolsa-esportiva-faculdade.html" class="site-footer__link">Bolsa Acadêmica College</a>
+                                <a href="bolsa-esportiva-faculdade.html" class="site-footer__link">Bolsa Acadêmica College</a>
                                 <a href="bolsa-esportiva-espanha.html" class="site-footer__link">Bolsa Esportiva Espanha</a>
                             </div>
                         </div>
@@ -433,7 +499,7 @@
             </div>
         </div>
     </footer>
-
+    
     <script
     src="https://code.jquery.com/jquery-3.4.1.min.js"
     integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo="

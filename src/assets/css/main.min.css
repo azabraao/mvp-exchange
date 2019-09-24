@@ -358,13 +358,41 @@ html {
       background-size: 100%;
       background-repeat: no-repeat; }
   .nav--mobile .nav__links {
-    padding-top: 1rem; }
+    padding-top: 1rem;
+    padding-bottom: 1rem; }
     .nav--mobile .nav__links li {
       padding: .5rem 0; }
       .nav--mobile .nav__links li a {
         font-family: "Titillium Web", "Montserrat", sans-serif;
         color: #000;
-        text-decoration: none; }
+        text-decoration: none;
+        position: relative; }
+      .nav--mobile .nav__links li .dropdown {
+        max-height: 0;
+        overflow: hidden;
+        padding-left: 20px;
+        transition: max-height .3s; }
+    .nav--mobile .nav__links li.has-dropdown > a:after {
+      content: '';
+      background-image: url(../img/icon-arrow-right.png);
+      background-size: contain;
+      width: 12px;
+      height: 12px;
+      position: absolute;
+      display: block;
+      background-repeat: no-repeat;
+      right: -20px;
+      top: 0;
+      background-position: center right;
+      bottom: 0;
+      margin: auto;
+      transform: rotate(0deg);
+      transition: transform .3s; }
+    .nav--mobile .nav__links li.has-dropdown.active > a:after {
+      transform: rotate(90deg); }
+    .nav--mobile .nav__links li.has-dropdown.active .dropdown {
+      max-height: 500px;
+      overflow: auto; }
 
 .nav-toggler:focus {
   outline: 1px solid #c7ae69; }
@@ -385,8 +413,9 @@ html {
     border-radius: 5px; }
 
 .nav.active {
-  max-height: 500px;
-  transition: max-height .3s; }
+  max-height: 600px;
+  transition: max-height .3s;
+  overflow-y: scroll; }
 
 .nav--tablet-up {
   display: none; }

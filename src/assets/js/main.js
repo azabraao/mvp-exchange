@@ -2,9 +2,17 @@ const nav = {
     init() {
         $('.jsMobileMenuToggler').on('click', nav.toggleMenu);
         $('.jsMenulinks a').on('click', nav.toggleMenu);
+        $('.jsActiveDropDown').on('click', nav.toggleDropDown);
+    },
+    toggleDropDown(e) {
+        e.preventDefault();
+        $(this).toggleClass('active');
     },
     toggleMenu() {
-        $('.jsMobileNav').toggleClass('active');
+        nav.isDropDown($(this)) ? null : $('.jsMobileNav').toggleClass('active');
+    },
+    isDropDown(el) {
+        return $(el).parent().hasClass('has-dropdown');
     }
 }
 
