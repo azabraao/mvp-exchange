@@ -593,7 +593,9 @@ html {
           position: relative;
           cursor: pointer; }
           .nav--tablet-up .nav__inner .nav__links li.has-dropdown .dropdown {
-            display: none; }
+            display: none;
+            z-index: 1;
+            min-width: 180px; }
             .nav--tablet-up .nav__inner .nav__links li.has-dropdown .dropdown .dropdown__link {
               text-decoration: none; }
         .nav--tablet-up .nav__inner .nav__links li.has-dropdown:hover {

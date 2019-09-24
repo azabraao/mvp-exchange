@@ -189,7 +189,9 @@
 
                     .dropdown {
                         display: none;
-
+                        z-index: 1;
+                        min-width: 180px;
+                        
                         .dropdown__link {
                             text-decoration: none;
                         }
