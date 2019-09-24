@@ -1,6 +1,7 @@
 .site-header {
     background-image: url('../img/site-header-background-overlay.png'),url('../img/site-header-background.png');
     background-size: cover, cover;
+    background-position: top center;
     
     .site-header__inner {
         .site-header__columns {
