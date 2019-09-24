@@ -16,6 +16,18 @@
             height: 126px;
             background: tomato;
         }
+        .box__cover {
+            background-size: contain;
+        }
+        .box__cover.intercambio-esportivo {
+            background-image: url(../img/programa-intercambio-esportivo.png);
+        }
+        .box__cover.intercambio-academico {
+            background-image: url(../img/programa-intercambio-academico.gif)
+        }
+        .box__cover.viagens {
+            background-image: url(../img/programa-viagens.gif)
+        }
         
         .box__title {
             padding: 25px 0 18px 0;
