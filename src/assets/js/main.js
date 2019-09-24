@@ -34,6 +34,7 @@ const slide = {
             speed: 300,
             slidesToShow: 6,
             slidesToScroll: 4,
+            autoplay: true,
             responsive: [
                 {
                     breakpoint: 1024,
@@ -55,12 +56,12 @@ const slide = {
                     breakpoint: 480,
                     settings: {
                         slidesToShow: 2,
-                        slidesToScroll: 1
+                        slidesToScroll: 1,
+                        dots: false,
+                        centerPadding: "15px",
+                        centerMode: true,
                     }
                 }
-                // You can unslick at a given breakpoint now by adding:
-                // settings: "unslick"
-                // instead of a settings object
             ]
         });
     }
