@@ -1,10 +1,21 @@
 .btn {
     border-radius: 5px;
-    padding: 2px 58px;
-    font-size: 25px;
+    padding: 2px 33px;
+    font-size: 22px;
     display: inline-block;
     border: none;
     text-decoration: none;
+}
+
+@media only screen and (min-width: $mobile-up) {
+    .btn {
+        border-radius: 5px;
+        padding: 2px 48px;
+        font-size: 25px;
+        display: inline-block;
+        border: none;
+        text-decoration: none;
+    }
 }
 
 .btn--primary {
